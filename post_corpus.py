@@ -66,7 +66,7 @@ for line in inputfile:
   elif line_content != '':
     match = re.search(f'^(\d+){numdelimiter}', line_content)
     if match:
-      # print(repr(answer))
+      # print(answer)
       question = line_content
       question_count = int(match.group(1))
       answers.append({
@@ -76,10 +76,16 @@ for line in inputfile:
       })
       answer = None
       # print(repr(question))
-    if (prev_line == '\n') and (line != '\n'):
-      answer = f'{line_content} '
+    elif (answer == None):
+      if (prev_line == '\n') and (line != '\n'):
+        answer = f'\n{line_content} '
+      else:
+        answer = line
     else:
-      answer += f'{line_content} '
+      if (prev_line == '\n') and (line != '\n'):
+        answer += f'\n{line_content} '
+      else:
+        answer += line
   line_index += 1
   prev_line = line
 
