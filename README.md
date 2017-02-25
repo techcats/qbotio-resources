@@ -1,5 +1,10 @@
 # qbotio-resources
 
+## Applications
+
+process_query.py - Example of applying NLTK techniques to improve a input query
+corpus_to_json.py - Convert a sample corpus to JSON. See sample_corpus/ for example formats that the application can parse
+
 ## Development
 
 ### Git Setup
@@ -17,7 +22,7 @@ Clone the git repository: ```$ git clone https://github.com/techcats/qbotio-reso
 8. ```(qbotio) $ deactivate```
 9. ```$ workon qbotio```
 
-You should now be at the root directory of 'qbotio-resources/'. Calling ```$ workon qbotio``` should now automatically direct to the your sources directory.
+You should now be at the root directory of 'qbotio-resources/'. Calling ```$ workon qbotio-resources``` should now automatically direct to the your sources directory.
 
 > A tip for step 3 & 4 (Linux & Mac): Similiar to ```python3```, ```pip3``` is the python 3.x's equivalent. virtualenvwrapper.sh may require the correct python version in your "VIRTUALENVWRAPPER_PYTHON" environment variable.
 
