@@ -26,3 +26,10 @@ You should now be at the root directory of 'qbotio-resources/'. Calling ```$ wor
 Run ```(qbotio) $ pip install -r requirements.txt```
 
 > To include a new library use ```(qbotio) $ pip install [package]```, and then ```(qbotio) $ pip freeze > requirements.txt```
+
+### Install NLTK Data
+
+```bash
+python -m nltk.downloader stopwords
+python -m nltk.downloader punkt
+```
