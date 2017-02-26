@@ -1,26 +1,54 @@
-import os, sys, re, getopt, json, pprint, string
+import os, sys, re, getopt, json, pprint
+
+debug = False
+questions_only = False
+questions_and_answers = False
+origin = ''
+filename = ''
+output_filepath = ''
+numdelimiter = ''
+user = None
+password = None
+auth = []
+multi_line_question = False
+collection = []
 
 def print_usage():
-  print(f'Usage: {sys.argv[0]} -i <inputfile> [-o <outputfile>] [--questions-only] [--multi-line-question] --numdelimiter=<delimiter> [debug]')
+  print(f'Usage: {sys.argv[0]} -i <inputfile> [-o <outputfile>] [--questions-only] [--questions_and_answers] [--multi-line-question] --numdelimiter=<delimiter> [debug]')
+
+def print_debug(question, answer):
+  if questions_and_answers:
+    print(repr(f'{question}'))
+    print(repr(f'{answer}'))
+  elif questions_only: 
+    print(repr(f'{question}'))
+  else: 
+    print(repr(f'{answer}'))
+
+def collect(question, answer):
+  if (questions_and_answers):
+    collection.append({
+      'question': question,
+      'answer': answer,
+      'origin': origin,
+      'source': filename
+    })
+  else:
+    collection.append({
+      'value': question if questions_only else answer,
+      'origin': origin,
+      'source': filename
+    })
 
 if (len(sys.argv) < 2):
   print_usage()
   sys.exit(2)
 
 try:
-  opts, args = getopt.getopt(sys.argv[1:], 'hi:o:', ['help=', 'input=', 'output=', 'questions-only', 'multi-line-question', 'numdelimiter=', 'debug'])
+  opts, args = getopt.getopt(sys.argv[1:], 'hi:o:', ['help=', 'input=', 'output=', 'questions-only', 'questions-and-answers', 'multi-line-question', 'numdelimiter=', 'debug'])
 except getopt.GetoptError:
   print_usage()
   sys.exit(2)
-
-output_filepath = ''
-numdelimiter = ''
-user = None
-password = None
-auth = []
-debug = False
-questions_only = False
-multi_line_question = False
 
 for opt, arg in opts:
   pass
@@ -39,6 +67,8 @@ for opt, arg in opts:
     auth.append(password)
   elif opt == '--questions-only':
     questions_only = True
+  elif opt == '--questions-and-answers':
+    questions_and_answers = True
   elif opt == '--multi-line-question':
     multi_line_question = True
   elif opt == '--numdelimiter':
@@ -59,9 +89,8 @@ line_index = 0
 question = None
 answer = None
 prev_line = ''
-questions = []
-answers = []
-printable = set(string.printable)
+regexp = re.compile(f'^(\d+){numdelimiter}')
+
 for line in inputfile:
   line_content = line.strip()
   if (line_index == 0):
@@ -69,33 +98,23 @@ for line in inputfile:
     line_index += 1
     continue
   if (question == None) and (line_content != ''):
-    question = line_content
-    match = re.search(f'^(\d+){numdelimiter}', line_content)
+    match = regexp.match(line_content)
     if match:
+      question = regexp.sub('', line_content).strip()
       question_count = int(match.group(1))
     else:
-      print(f'Unable to parse question \'{question}\' with number delimiter \'{numdelimiter}\'')
+      print(f'Unable to parse question \'{line_content}\' with number delimiter \'{numdelimiter}\'')
       sys.exit(2)
   else:
-    match = re.search(f'^(\d+){numdelimiter}', line_content)
+    match = regexp.match(line_content)
     if match:
       number = int(match.group(1))
       if number > question_count:
-        if debug: print(repr(f'{question}'))
         answer = answer.strip()
-        questions.append({
-          'value': question,
-          'origin': origin,
-          'source': filename
-        })
-        answers.append({
-          'value': answer,
-          'origin': origin,
-          'source': filename
-        })
-        if debug and not questions_only: print(repr(f'{answer}'))
+        collect(question, answer)
+        if debug: print_debug(question, answer)
         question_count = number
-        question = line_content
+        question = regexp.sub('', line_content).strip()
         answer = None
         continue
     if multi_line_question and (prev_line.strip() != '') and prev_line.endswith('\n') and (prev_line.strip() in question):
@@ -108,28 +127,12 @@ for line in inputfile:
   prev_line = line
 
 answer = answer.strip()
-questions.append({
-  'value': question,
-  'origin': origin,
-  'source': filename
-})
-answers.append({
-  'value': answer,
-  'origin': origin,
-  'source': filename
-})
+collect(question, answer)
 
-if debug: print(repr(f'{question}'))
-if debug and not questions_only: print(repr(f'{answer}'))
+if debug: print_debug(question, answer)
 
 if output_filepath:
   with open(output_filepath, 'w') as outputfile:
-    if questions_only:
-      json.dump(questions, outputfile, indent=2)
-    else:
-      json.dump(answers, outputfile, indent=2)
+      json.dump(collection, outputfile, indent=2)
 else:
-  if questions_only:
-    pprint.pprint(questions)
-  else:
-    pprint.pprint(answers)
+    pprint.pprint(collection)
