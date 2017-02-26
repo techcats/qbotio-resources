@@ -2,8 +2,8 @@
 
 ## Applications
 
-process_query.py - Example of applying NLTK techniques to improve a input query
-corpus_to_json.py - Convert a sample corpus to JSON. See sample_corpus/ for example formats that the application can parse
+- process_query.py: Example of applying NLTK techniques to improve a input query
+- corpus_to_json.py: Convert a sample corpus to JSON. See sample_corpus/ for example formats that the application can parse
 
 ## Development
 
