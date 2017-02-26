@@ -71,7 +71,7 @@ if args.verbose:
   outputfile.write('  ],\n')
 outputfile.writelines([
   f'{indent}"overall": {{\n',
-  f'{indent}"train_count": {train_count},\n',
+  f'{indent2x}"train_count": {train_count},\n',
   f'{indent2x}"total_rankings": {total_rankings},\n',
   f'{indent2x}"misses": {misses},\n',
   f'{indent2x}"hit_accuracy": {hit_accuracy},\n',
