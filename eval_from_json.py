@@ -1,10 +1,10 @@
 import argparse, ijson, os, re
 from urllib import request, parse
 
-parser = argparse.ArgumentParser(description='Reads a JSON list of questions/answers and evaluates the performance of api.qbotio.com/search')
+parser = argparse.ArgumentParser(description='Reads a JSON list of questions/answers and evaluates the performance of Q Bot IO')
 parser.add_argument('url', metavar='<URL>', type=str, help='Q Bot IO search endpoint')
 parser.add_argument('-i', '-I', '--input', metavar='<File>', type=str, help='a JSON file containing questions and answers', required=True)
-parser.add_argument('-o', '-O', '--output', metavar='<File>', type=str, help='Filepath for writing evaluation results', required=True)
+parser.add_argument('-o', '-O', '--output', metavar='<File>', type=str, help='File for reporting evaluation results', required=True)
 parser.add_argument('-v', '--verbose', action='store_true', help='Output accuracy for each question result')
 parser.add_argument('--passthrough', action='store_true', help='Omit NLTK preprocessing')
 args = parser.parse_args()
@@ -25,6 +25,7 @@ train_count = 0
 total_rankings = 0
 total_accuracy = 0
 misses = 0
+error = 0
 ESCAPE_QUOTE = re.compile(r'(")')
 for i, data in enumerate(TRAINING_DATA):
   if args.verbose and (i > 0):
@@ -35,6 +36,7 @@ for i, data in enumerate(TRAINING_DATA):
   items = ijson.items(connection, 'item')
   rank = 0
   rank_count = 0
+  rank_error = 0
   accuracy = 0
   for j, item in enumerate(items):
     if item['value'] == data['answer']:
@@ -43,9 +45,12 @@ for i, data in enumerate(TRAINING_DATA):
   total_rankings += rank_count
   if rank == 0: 
     misses += 1
+    rank_error = 10
   else:
     accuracy = (rank_count - (rank - 1)) / rank_count
+    rank_error = rank - 1
   total_accuracy += accuracy
+  error += rank_error
   connection.close()
   metadata = []
   if args.verbose:
@@ -59,6 +64,7 @@ for i, data in enumerate(TRAINING_DATA):
       f'{indent4x}"question": "%s",\n' % ESCAPE_QUOTE.sub(r'\\\1', question),
       f'{indent4x}"rank": {rank},\n',
       f'{indent4x}"rank_count": {rank_count},\n',
+      f'{indent4x}"rank_error": {rank_error},\n',
       f'{indent4x}"accuracy": {accuracy},\n',
       f'{metadata}\n',
       f'{indent2x}}}'
@@ -68,12 +74,14 @@ for i, data in enumerate(TRAINING_DATA):
 hit_accuracy = (train_count - misses) / train_count
 rank_accuracy = total_accuracy / train_count
 if args.verbose:
-  outputfile.write('  ],\n')
+  outputfile.write('\n  ],\n')
+error /= train_count
 outputfile.writelines([
   f'{indent}"overall": {{\n',
   f'{indent2x}"train_count": {train_count},\n',
   f'{indent2x}"total_rankings": {total_rankings},\n',
   f'{indent2x}"misses": {misses},\n',
+  f'{indent2x}"mean_average_error": {error},\n',
   f'{indent2x}"hit_accuracy": {hit_accuracy},\n',
   f'{indent2x}"rank_accuracy": {rank_accuracy}\n',
   f'{indent}}}\n'
