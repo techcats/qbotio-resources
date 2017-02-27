@@ -39,3 +39,11 @@ Run ```(qbotio-resources) $ pip install -r requirements.txt```
 python -m nltk.downloader stopwords
 python -m nltk.downloader punkt
 ```
+> If there are errors while you install NLTK data, you can manual download from [here](http://www.nltk.org/nltk_data/)
+And put data to: 
+```
+Windows: C:\nltk_data\tokenizers
+OSX: /usr/local/share/nltk_data/tokenizers
+Unix: /usr/share/nltk_data/tokenizers
+```
+
