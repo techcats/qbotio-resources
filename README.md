@@ -20,8 +20,8 @@ Clone the git repository: ```$ git clone https://github.com/techcats/qbotio-reso
 4. Install virtualenvwrapper. Follow and see usage with [Windows](https://pypi.python.org/pypi/virtualenvwrapper-win), [Linux & Mac](https://virtualenvwrapper.readthedocs.io/en/stable/) guides.
 6. Create (```$ mkvirtualenv qbotio-resources```) and work (```$ workon qbotio-resources```) on a local environment using virtualenvwrapper.
 7. Set the default project directory: ```(qbotio-resources) $ setvirtualenvproject $VIRTUAL_ENV <path to cloned repo>``` (Linux & Mac) or use ```setprojectdir <path to cloned repo>``` (Windows)
-8. ```(qbotio) $ deactivate```
-9. ```$ workon qbotio```
+8. ```(qbotio-resources) $ deactivate```
+9. ```$ workon qbotio-resources```
 
 You should now be at the root directory of 'qbotio-resources/'. Calling ```$ workon qbotio-resources``` should now automatically direct to the your sources directory.
 
@@ -29,9 +29,9 @@ You should now be at the root directory of 'qbotio-resources/'. Calling ```$ wor
 
 ### Install/Update python libraries
 
-Run ```(qbotio) $ pip install -r requirements.txt```
+Run ```(qbotio-resources) $ pip install -r requirements.txt```
 
-> To include a new library use ```(qbotio) $ pip install [package]```, and then ```(qbotio) $ pip freeze > requirements.txt```
+> To include a new library use ```(qbotio-resources) $ pip install [package]```, and then ```(qbotio-resources) $ pip freeze > requirements.txt```
 
 ### Install NLTK Data
 
@@ -39,3 +39,11 @@ Run ```(qbotio) $ pip install -r requirements.txt```
 python -m nltk.downloader stopwords
 python -m nltk.downloader punkt
 ```
+> If there are errors while you install NLTK data, you can manual download from [here](http://www.nltk.org/nltk_data/)
+And put data to: 
+```
+Windows: C:\nltk_data\tokenizers
+OSX: /usr/local/share/nltk_data/tokenizers
+Unix: /usr/share/nltk_data/tokenizers
+```
+
