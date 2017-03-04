@@ -402,7 +402,7 @@ IPv6, or Internet Protocol version 6, was developed to replace IPv4. At present,
 
 RSA is short for Rivest-Shamir-Adleman algorithm. It is the most commonly used public key encryption algorithm in use today.
 
-99.What is mesh topology?
+99. What is mesh topology?
 
 Mesh topology is a setup wherein each device is connected directly to every other device on the network. Consequently, it requires that each device have at least two network connections.
 

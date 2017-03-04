@@ -1,0 +1,111 @@
+[{
+	"question": "What is a data structure?",
+	"answer": "A data structure is a particular way of organizing data in a computer so that it can be used efficiently.",
+	"origin": "https://en.wikipedia.org/wiki/Data_structure",
+	"tags": ["definition"]
+}, {
+	"question": "What is file system?",
+	"answer": "A file system or filesystem is used to control how data is stored and retrieved. Without a file system, information placed in a storage medium would be one large body of data with no way to tell where one piece of information stops and the next begins. By separating the data into pieces and giving each piece a name, the information is easily isolated and identified.",
+	"origin": "https://en.wikipedia.org/wiki/File_system",
+	"tags": ["definition"]
+}, {
+	"question": "What is binary search?",
+	"answer": "In computer science, binary search, also known as half-interval search or logarithmic search, is a search algorithm that finds the position of a target value within a sorted array. Binary search compares the target value to the middle element of the array; if they are unequal, the half in which the target cannot lie is eliminated and the search continues on the remaining half until it is successful or the remaining half is empty.",
+	"origin": "https://en.wikipedia.org/wiki/Binary_search_algorithm",
+	"tags": ["definition"]
+}, {
+	"question": "What is a linked list?",
+	"answer": "A linked list is a linear collection of data elements, called nodes, each pointing to the next node by means of a pointer. It is a data structure consisting of a group of nodes which together represent a sequence. Under the simplest form, each node is composed of data and a reference (in other words, a link) to the next node in the sequence. This structure allows for efficient insertion or removal of elements from any position in the sequence during iteration. More complex variants add additional links, allowing efficient insertion or removal from arbitrary element references.",
+	"origin": "https://en.wikipedia.org/wiki/Linked_list",
+	"tags": ["definition"]
+}, {
+	"question": "What is a queue?",
+	"answer": "In computer science, a queue is a particular kind of abstract data type or collection in which the entities in the collection are kept in order and the principal (or only) operations on the collection are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. This makes the queue a First-In-First-Out (FIFO) data structure. In a FIFO data structure, the first element added to the queue will be the first one to be removed.",
+	"origin": "https://en.wikipedia.org/wiki/Queue_(abstract_data_type)",
+	"tags": ["definition"]
+}, {
+	"question": "What is a binary tree?",
+	"answer": "In computer science, a binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child. A recursive definition using just set theory notions is that a (non-empty) binary tree is a triple (L, S, R), where L and R are binary trees or the empty set and S is a singleton set.",
+	"origin": "https://en.wikipedia.org/wiki/Binary_tree",
+	"tags": ["definition"]
+}, {
+	"question": "What is a stack?",
+	"answer": "A stack is an abstract data type that serves as a collection of elements, with two principal operations: push, which adds an element to the collection, and pop, which removes the most recently added element that was not yet removed. The order in which elements come off a stack gives rise to its alternative name, LIFO (for last in, first out). Additionally, a peek operation may give access to the top without modifying the stack.",
+	"origin": "https://en.wikipedia.org/wiki/stack_(abstract_data_type)",
+	"tags": ["definition"]
+}, {
+	"question": "What is a Binary Search Tree?",
+	"answer": "binary search trees (BST), sometimes called ordered or sorted binary trees, are a particular type of containers: data structures that store items such as numbers, names etc.) in memory. They allow fast lookup, addition and removal of items, and can be used to implement either dynamic sets of items, or lookup tables that allow finding an item by its key (e.g., finding the phone number of a person by name).",
+	"origin": "https://en.wikipedia.org/wiki/Binary_search_tree",
+	"tags": ["definition"]
+}, {
+	"question": "What is an merged sort?",
+	"answer": "Merge sort (also commonly spelled mergesort) is an efficient, general-purpose, comparison-based sorting algorithm. Most implementations produce a stable sort, which means that the implementation preserves the input order of equal elements in the sorted output. Mergesort is a divide and conquer algorithm that was invented by John von Neumann in 1945.",
+	"origin": "https://en.wikipedia.org/wiki/Merge_sort",
+	"tags": ["definition"]
+}, {
+	"question": "What is a container?",
+	"answer": "A container is a class, a data structure, or an abstract data type (ADT) whose instances are collections of other objects. In other words, they store objects in an organized way that follows specific access rules. The size of the container depends on the number of objects (elements) it contains. Underlying (inherited) implementations of various container types may vary in size and complexity, and provide flexibility in choosing the right implementation for any given scenario.",
+	"origin": "https://en.wikipedia.org/wiki/Container_(abstract_data_type)",
+	"tags": ["definition"]
+}, {
+	"question": "What is an associative array?",
+	"answer": "An associative array, map, symbol table, or dictionary is an abstract data type composed of a collection of (key, value) pairs, such that each possible key appears at most once in the collection.",
+	"origin": "https://en.wikipedia.org/wiki/Associative_array",
+	"tags": ["definition"]
+}, {
+	"question": "What is a multimap?",
+	"answer": "A multimap (sometimes also multihash) is a generalization of a map or associative array abstract data type in which more than one value may be associated with and returned for a given key. Both map and multimap are particular cases of containers (for example, see C++ Standard Template Library containers). Often the multimap is implemented as a map with lists or sets as the map values.",
+	"origin": "https://en.wikipedia.org/wiki/Multimap",
+	"tags": ["definition"]
+}, {
+	"question": "What is a set?",
+	"answer": "A set is an abstract data type that can store certain values, without any particular order, and no repeated values. It is a computer implementation of the mathematical concept of a finite set. Unlike most other collection types, rather than retrieving a specific element from a set, one typically tests a value for membership in a set.",
+	"origin": "https://en.wikipedia.org/wiki/Set_(abstract_data_type)",
+	"tags": ["definition"]
+}, {
+	"question": "What is a double-ended queue?",
+	"answer": "A double-ended queue is an abstract data type that generalizes a queue, for which elements can be added to or removed from either the front (head) or back (tail).",
+	"origin": "https://en.wikipedia.org/wiki/Double-ended_queue",
+	"tags": ["definition"]
+}, {
+	"question": "What is a priority queue?",
+	"answer": "A priority queue is an abstract data type which is like a regular queue or stack data structure, but where additionally each element has a priority associated with it. In a priority queue, an element with high priority is served before an element with low priority. If two elements have the same priority, they are served according to their order in the queue.",
+	"origin": "https://en.wikipedia.org/wiki/Priority_queue",
+	"tags": ["definition"]
+}, {
+	"question": "What is a tree?",
+	"answer": "A tree is a widely used abstract data type (ADT)—or data structure implementing this ADT—that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node, represented as a set of linked nodes.",
+	"origin": "https://en.wikipedia.org/wiki/tree_(data_structure)",
+	"tags": ["definition"]
+}, {
+	"question": "What is a red-black tree?",
+	"answer": "A red–black tree is a kind of self-balancing binary search tree. Each node of the binary tree has an extra bit, and that bit is often interpreted as the color (red or black) of the node. These color bits are used to ensure the tree remains approximately balanced during insertions and deletions.",
+	"origin": "https://en.wikipedia.org/wiki/Red–black_tree",
+	"tags": ["definition"]
+}, {
+	"question": "What is a heap?",
+	"answer": "A heap is a specialized tree-based data structure that satisfies the heap property: If A is a parent node of B, then the key (the value) of node A is ordered with respect to the key of node B with the same ordering applying across the heap. A heap can be classified further as either a max heap or a min heap. In a max heap, the keys of parent nodes are always greater than or equal to those of the children and the highest key is in the root node. In a min heap, the keys of parent nodes are less than or equal to those of the children and the lowest key is in the root node.",
+	"origin": "https://en.wikipedia.org/wiki/Heap_(data_structure)",
+	"tags": ["definition"]
+}, {
+	"question": "What is big O?",
+	"answer": "The time complexity of an algorithm quantifies the amount of time taken by an algorithm to run as a function of the length of the string representing the input.The time complexity of an algorithm is commonly expressed using big O notation, which excludes coefficients and lower order terms. When expressed this way, the time complexity is said to be described asymptotically, i.e., as the input size goes to infinity.",
+	"origin": "https://en.wikipedia.org/wiki/Time_complexity",
+	"tags": ["definition"]
+}, {
+	"question": "What is a Abstract Data Type?",
+	"answer": "An abstract data type (ADT) is a mathematical model for data types where a data type is defined by its behavior (semantics) from the point of view of a user of the data, specifically in terms of possible values, possible operations on data of this type, and the behavior of these operations. This contrasts with data structures, which are concrete representations of data, and are the point of view of an implementer, not a user.",
+	"origin": "https://en.wikipedia.org/wiki/Abstract_data_type",
+	"tags": ["definition"]
+}, {
+	"question": "What is a recursion?",
+	"answer": "Recursion in computer science is a method where the solution to a problem depends on solutions to smaller instances of the same problem (as opposed to iteration).",
+	"origin": "https://en.wikipedia.org/wiki/Recursion_(computer_science)",
+	"tags": ["definition"]
+}, {
+	"question": "What is a quicksort?",
+	"answer": "Quicksort is a divide and conquer algorithm. Quicksort first divides a large array into two smaller sub-arrays: the low elements and the high elements. Quicksort can then recursively sort the sub-arrays.",
+	"origin": "https://en.wikipedia.org/wiki/Quicksort#Algorithm",
+	"tags": ["definition"]
+}]
