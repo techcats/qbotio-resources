@@ -4,7 +4,7 @@ parser = argparse.ArgumentParser(description='Compare between two evaluations')
 parser.add_argument('file1', type=str, help='Evaluation 1')
 parser.add_argument('file2', type=str, help='Evaluation 2')
 parser.add_argument('--select', type=int, help='Select evaluation [1] or [2] to check performance', choices=[1, 2], required=True)
-parser.add_argument('--filter-positive', action='store_true', help='Output only negative or neutral performances')
+parser.add_argument('--filter', type=int, choices=[1, 2, 3], help='Output only (negative or neutral) [1] or negative [2] or positive[3] performances')
 parser.add_argument('-o', '-O', '--output', metavar ='<File>', type=str, required=True, help='File for reporting comparisons')
 parser.add_argument('-v', '--verbose', action='store_true', help='Output comparison for each question result')
 
@@ -51,18 +51,26 @@ try:
     elif args.select == 2:
       rank1 = evaluation2['rank']
       rank2 = evaluation1['rank']
-    if (rank1 == 1) or (rank1 < rank2):
+    if rank1 == 1:
       is_positive = True
-    if args.verbose and not (args.filter_positive and is_positive):
-      if count > 0: outputfile.write(',\n')
-      outputfile.writelines([
-        f'{indent2x}{{\n',
-        f'{indent4x}"question": "%s",\n' % ESCAPE_QUOTE.sub(r'\\\1', evaluation1['question']),
-        f'{indent4x}"eval1_rank": %s,\n' % evaluation1['rank'],
-        f'{indent4x}"eval2_rank": %s\n' % evaluation2['rank'],
-        f'{indent2x}}}'
-      ])
-      count += 1
+    if args.verbose:
+      is_output = False
+      if args.filter == 1:
+        is_output = (not is_positive) and (rank1 >= rank2)
+      elif args.filter == 2:
+        is_output = not is_positive
+      elif args.filter == 3:
+        is_output = is_positive
+      if is_output:
+        if count > 0: outputfile.write(',\n')
+        outputfile.writelines([
+          f'{indent2x}{{\n',
+          f'{indent4x}"question": "%s",\n' % ESCAPE_QUOTE.sub(r'\\\1', evaluation1['question']),
+          f'{indent4x}"eval1_rank": %s,\n' % evaluation1['rank'],
+          f'{indent4x}"eval2_rank": %s\n' % evaluation2['rank'],
+          f'{indent2x}}}'
+        ])
+        count += 1
 except StopIteration:
   if args.verbose:
     outputfile.write('\n  ],\n')
