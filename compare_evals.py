@@ -6,7 +6,7 @@ parser.add_argument('file2', type=str, help='Evaluation 2')
 parser.add_argument('--select', type=int, help='Select evaluation [1] or [2] to check performance', choices=[1, 2], required=True)
 parser.add_argument('--filter', type=int, choices=[1, 2, 3], help='Output only (negative or neutral) [1] or negative [2] or positive[3] performances')
 parser.add_argument('-o', '-O', '--output', metavar ='<File>', type=str, required=True, help='File for reporting comparisons')
-parser.add_argument('-v', '--verbose', action='store_true', help='Output comparison for each question result')
+parser.add_argument('-v', '--verbose', action='store_true', help='Output comparison for each question result', required=True)
 
 args = parser.parse_args()
 

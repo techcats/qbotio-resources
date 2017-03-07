@@ -38,9 +38,18 @@ for i, data in enumerate(TRAINING_DATA):
   rank_count = 0
   rank_error = 0
   accuracy = 0
+  answer_index = -1
   for j, item in enumerate(items):
-    if item['value'] == data['answer']:
-      rank = j + 1
+    if rank == 0:
+      if isinstance(data['answer'], list):
+        try:
+          answer_index = data['answer'].index(item['value'])
+          if answer_index > -1:
+            rank = j + 1
+        except:
+          pass
+      elif item['value'] == data['answer']:
+        rank = j + 1
     rank_count += 1
   total_rankings += rank_count
   if rank == 0: 
@@ -55,9 +64,15 @@ for i, data in enumerate(TRAINING_DATA):
   metadata = []
   if args.verbose:
     if 'origin' in data:
-      metadata.append('%s"origin": "%s"' % (indent4x, data['origin']))
+      origin = data['origin']
+      if answer_index > -1:
+        origin = origin[answer_index]
+      metadata.append('%s"origin": "%s"' % (indent4x, origin))
     if 'source' in data:
-      metadata.append('%s"source": "%s"' % (indent4x, data['source']))
+      source = data['source']
+      if answer_index > -1:
+        source = source[answer_index]
+      metadata.append('%s"source": "%s"' % (indent4x, source))
     metadata = ',\n'.join(metadata)
     outputfile.writelines([
       f'{indent2x}{{\n',
