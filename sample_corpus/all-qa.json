@@ -1,0 +1,1632 @@
+[
+  {
+    "question": "What is data structure?",
+    "answer": [
+      "Data structures refers to the way data is organized and manipulated. It seeks to find ways to make data access more efficient. When dealing with data structure, we not only focus on one piece of data, but rather different set of data and how they can relate to one another in an organized manner.", 
+      "A data structure is a particular way of organizing data in a computer so that it can be used efficiently."
+    ],
+    "origin": [
+      "http://career.guru99.com/top-50-data-structure-interview-questions/",
+      "https://en.wikipedia.org/wiki/Data_structure"
+    ],
+    "source": [
+      "top-50-data-structure-interview-questions.txt",
+      "data-structure-interview-questions.json"
+    ]
+  },
+  {
+    "question": "Differentiate file structure from storage structure.",
+    "answer": "Basically, the key difference is the memory area that is being accessed. When dealing with the structure that resides the main memory of the computer system, this is referred to as storage structure. When dealing with an auxiliary structure, we refer to it as file structures.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "When is a binary search best applied?",
+    "answer": "A binary search is an algorithm that is best applied to search a list when the elements are already in order or sorted. The list is search starting in the middle, such that if that middle value is not the target search key, it will check to see if it will continue the search on the lower half of the list or the higher half. The split and search will then continue in the same manner.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What is a linked list?",
+    "answer": [
+      "A linked list is a sequence of nodes in which each node is connected to the node following it. This forms a chain-like link of data storage.",
+      "A linked list is a linear collection of data elements, called nodes, each pointing to the next node by means of a pointer. It is a data structure consisting of a group of nodes which together represent a sequence. Under the simplest form, each node is composed of data and a reference (in other words, a link) to the next node in the sequence. This structure allows for efficient insertion or removal of elements from any position in the sequence during iteration. More complex variants add additional links, allowing efficient insertion or removal from arbitrary element references."
+    ],
+    "origin": [
+      "http://career.guru99.com/top-50-data-structure-interview-questions/",
+      "https://en.wikipedia.org/wiki/Linked_list"
+    ],
+    "source": [
+      "top-50-data-structure-interview-questions.txt",
+      "data-structure-interview-questions.json"
+    ]
+  },
+  {
+    "question": "How do you reference all the elements in a one-dimension array?",
+    "answer": "To do this, an indexed loop is used, such that the counter runs from 0 to the array size minus one. In this manner, we are able to reference all the elements in sequence by using the loop counter as the array subscript.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "In what areas do data structures applied?",
+    "answer": "Data structures is important in almost every aspect where data is involved. In general, algorithms that involve efficient data structure is applied in the following areas: numerical analysis, operating system, A.I., compiler design, database management, graphics, and statistical analysis, to name a few.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What is LIFO?",
+    "answer": "LIFO is short for Last In First Out, and refers to how data is accessed, stored and retrieved. Using this scheme, data that was stored last, should be the one to be extracted first. This also means that in order to gain access to the first data, all the other data that was stored before this first data must first be retrieved and extracted.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What is a queue?",
+    "answer": [
+      "A queue is a data structures that can simulates a list or stream of data. In this structure, new elements are inserted at one end and existing elements are removed from the other end.",
+      "In computer science, a queue is a particular kind of abstract data type or collection in which the entities in the collection are kept in order and the principal (or only) operations on the collection are the addition of entities to the rear terminal position, known as enqueue, and removal of entities from the front terminal position, known as dequeue. This makes the queue a First-In-First-Out (FIFO) data structure. In a FIFO data structure, the first element added to the queue will be the first one to be removed."
+    ],
+    "origin": [
+      "http://career.guru99.com/top-50-data-structure-interview-questions/",
+      "https://en.wikipedia.org/wiki/Queue_(abstract_data_type)"
+    ],
+    "source": [
+      "top-50-data-structure-interview-questions.txt",
+      "data-structure-interview-questions.json"
+    ]
+  },
+  {
+    "question": "What are binary trees?",
+    "answer": [
+      "A binary tree is one type of data structure that has two nodes, a left node and a right node. In programming, binary trees are actually an extension of the linked list structures.",
+      "In computer science, a binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child. A recursive definition using just set theory notions is that a (non-empty) binary tree is a triple (L, S, R), where L and R are binary trees or the empty set and S is a singleton set."
+    ],
+    "origin": [
+      "http://career.guru99.com/top-50-data-structure-interview-questions/",
+      "https://en.wikipedia.org/wiki/Binary_tree"
+    ],
+    "source": [
+      "top-50-data-structure-interview-questions.txt",
+      "data-structure-interview-questions.json"
+    ]
+  },
+  {
+    "question": "Which data structures is applied when dealing with a recursive function?",
+    "answer": "Recursion, which is basically a function that calls itself based on a terminating condition, makes use of the stack. Using LIFO, a call to a recursive function saves the return address so that it knows how to return to the calling function after the call terminates.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What is a stack?",
+    "answer": [
+      "A stack is a data structure in which only the top element can be accessed. As data is stored in the stack, each data is pushed downward, leaving the most recently added data on top.",
+      "A stack is an abstract data type that serves as a collection of elements, with two principal operations: push, which adds an element to the collection, and pop, which removes the most recently added element that was not yet removed. The order in which elements come off a stack gives rise to its alternative name, LIFO (for last in, first out). Additionally, a peek operation may give access to the top without modifying the stack."
+    ],
+    "origin": [
+      "http://career.guru99.com/top-50-data-structure-interview-questions/",
+      "https://en.wikipedia.org/wiki/stack_(abstract_data_type)"
+    ],
+    "source": [
+      "top-50-data-structure-interview-questions.txt",
+      "data-structure-interview-questions.json"
+    ]
+  },
+  {
+    "question": "Explain Binary Search Tree",
+    "answer": "A binary search tree stores data in such a way that they can be retrieved very efficiently. The left subtree contains nodes whose keys are less than the node's key value, while the right subtree contains nodes whose keys are greater than or equal to the node's key value. Moreover, both subtrees are also binary search trees.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What are multidimensional arrays?",
+    "answer": "Multidimensional arrays make use of multiple indexes to store data. It is useful when storing data that cannot be represented using a single dimensional indexing, such as data representation in a board game, tables with data stored in more than one column.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "Are linked lists considered linear or non-linear data structures?",
+    "answer": "It actually depends on where you intend to apply linked lists. If you based it on storage, a linked list is considered non-linear. On the other hand, if you based it on access strategies, then a linked list is considered linear.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "How does dynamic memory allocation help in managing data?",
+    "answer": "Aside from being able to store simple structured data types, dynamic memory allocation can combine separately allocated structured blocks to form composite structures that expand and contract as needed.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What is FIFO?",
+    "answer": "FIFO is short for First-in, First-out, and is used to represent how data is accessed in a queue. Data has been inserted into the queue list the longest is the one that is removed first.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What is an ordered list?",
+    "answer": "An ordered list is a list in which each node's position in the list is determined by the value of its key component, so that the key values form an increasing sequence, as the list is traversed.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What is merge sort?",
+    "answer": [
+      "Merge sort takes a divide-and-conquer approach to sorting data. In a sequence of data, adjacent ones are merged and sorted to create bigger sorted lists. These sorted lists are then merged again to form an even bigger sorted list, which continuous until you have one single sorted list.",
+      "Merge sort (also commonly spelled mergesort) is an efficient, general-purpose, comparison-based sorting algorithm. Most implementations produce a stable sort, which means that the implementation preserves the input order of equal elements in the sorted output. Mergesort is a divide and conquer algorithm that was invented by John von Neumann in 1945."
+    ],
+    "origin": [
+      "http://career.guru99.com/top-50-data-structure-interview-questions/",
+      "https://en.wikipedia.org/wiki/Merge_sort"
+    ],
+    "source": [
+      "top-50-data-structure-interview-questions.txt",
+      ""
+    ]
+  },
+  {
+    "question": "Differentiate NULL and VOID.",
+    "answer": "Null is actually a value, whereas Void is a data type identifier. A variable that is given a Null value simply indicates an empty value. Void is used to identify pointers as having no initial size.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What is the primary advantage of a linked list?",
+    "answer": "A linked list is a very ideal data structure because it can be modified easily. This means that modifying a linked list works regardless of how many elements are in the list.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What is the difference between a PUSH and a POP?",
+    "answer": "Pushing and popping applies to the way data is stored and retrieved in a stack. A push denotes data being added to it, meaning data is being \"pushed\" into the stack. On the other hand, a pop denotes data retrieval, and in particular refers to the topmost data being accessed.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What is a linear search?",
+    "answer": "A linear search refers to the way a target key is being searched in a sequential data structure. Using this method, each element in the list is checked and compared against the target key, and is repeated until found or if the end of the list has been reached.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "How does variable declaration affect memory allocation?",
+    "answer": "The amount of memory to be allocated or reserved would depend on the data type of the variable being declared. For example, if a variable is declared to be of integer type, then 32 bits of memory storage will be reserved for that variable.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What is the advantage of the heap over a stack?",
+    "answer": "Basically, the heap is more flexible than the stack. That's because memory space for the heap can be dynamically allocated and de-allocated as needed. However, memory of the heap can at times be slower when compared to that stack.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What is a postfix expression?",
+    "answer": "A postfix expression is an expression in which each operator follows its operands. The advantage of this form is that there is no need to group sub-expressions in parentheses or to consider operator precedence.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What is Data abstraction?",
+    "answer": "Data abstraction is a powerful tool for breaking down complex data problems into manageable chunks. This is applied by initially specifying the data objects involved and the operations to be performed on these data objects without being overly concerned with how the data objects will be represented and stored in memory.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "How do you insert a new item in a binary search tree?",
+    "answer": "Assuming that the data to be inserted is a unique value (that is, not an existing entry in the tree), check first if the tree is empty. If it's empty, just insert the new item in the root node. If it's not empty, refer to the new item's key. If it's smaller than the root's key, insert it into the root's left subtree, otherwise, insert it into the root's right subtree.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "How does a selection sort work for an array?",
+    "answer": "The selection sort is a fairly intuitive sorting algorithm,, though not necessarily efficient. To perform this, the smallest element is first located and switched with the element at subscript zero, thereby placing the smallest element in the first position. The smallest element remaining in the subarray is then located next with subscripts 1 through n-1 and switched with the element at subscript 1, thereby placing the second smallest element in the second position. The steps are repeated in the same manner till the last element.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "How do signed and unsigned numbers affect memory?",
+    "answer": "In the case of signed numbers, the first bit is used to indicate whether positive or negative, which leaves you with one bit short. With unsigned numbers, you have all bits available for that number. The effect is best seen in the number range (unsigned 8 bit number has a range 0-255, while 8-bit signed number has a range -128 to +127.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What is the minimum number of nodes that a binary tree can have?",
+    "answer": "A binary tree can have a minimum of zero nodes, which occurs when the nodes have NULL values. Furthermore, a binary tree can also have 1 or 2 nodes.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What are dynamic data structures?",
+    "answer": "Dynamic data structures are structures that expand and contract as a program runs. It provides a flexible means of manipulating data because it can adjust according to the size of the data.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "In what data structures are pointers applied?",
+    "answer": "Pointers that are used in linked list have various applications in data structure. Data structures that make use of this concept include the Stack, Queue, Linked List and Binary Tree.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "Do all declaration statements result in a fixed reservation in memory?",
+    "answer": "Most declarations do, with the exemption of pointers. Pointer declaration does not allocate memory for data, but for the address of the pointer variable. Actual memory allocation for the data comes during run-time.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What are ARRAYs?",
+    "answer": "When dealing with arrays, data is stored and retrieved using an index that actually refers to the element number in the data sequence. This means that data can be accessed in any order. In programming, an array is declared as a variable having a number of indexed elements.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What is the minimum number of queues needed when implementing a priority queue?",
+    "answer": "The minimum number of queues needed in this case is two. One queue is intended for sorting priorities while the other queue is intended for actual storage of data.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "Which sorting algorithm is considered the fastest?",
+    "answer": "There are many types of sorting algorithms: quick sort, bubble sort, balloon sort, radix sort, merge sort, etc. Not one can be considered the fastest because each algorithm is designed for a particular data structure and data set. It would depend on the data set that you would want to sort.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "Differentiate STACK from ARRAY.",
+    "answer": "Data that is stored in a stack follows a LIFO pattern. This means that data access follows a sequence wherein the last data to be stored will the first one to be extracted. Arrays, on the other hand, does not follow a particular order and instead can be accessed by referring to the indexed element within the array.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "Give a basic algorithm for searching a binary search tree.",
+    "answer": "1. if the tree is empty, then the target is not in the tree, end search\n2. if the tree is not empty, the target is in the tree\n3. check if the target is in the root item\n4. if target is not in the root item, check if target is smaller than the root's value\n5. if target is smaller than the root's value, search the left subtree\n6. else, search the right subtree",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What is a dequeue?",
+    "answer": "A dequeue is a double-ended queue. This is a structure wherein elements can be inserted or removed from either end.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What is a bubble sort and how do you perform it?",
+    "answer": "A bubble sort is one sorting technique that can be applied to data structures such as an array. It works by comparing adjacent elements and exchanges their values if they are out of order. This method lets the smaller values \"bubble\" to the top of the list, while the larger value sinks to the bottom.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What are the parts of a linked list?",
+    "answer": "A linked list typically has two parts: the head and the tail. Between the head and tail lie the actual nodes, with each node being linked in a sequential manner.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "How does selection sort work?",
+    "answer": "Selection sort works by picking the smallest number from the list and placing it at the front. This process is repeated for the second position towards the end of the list. It is the simplest sort algorithm.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What is a graph?",
+    "answer": "A graph is one type of data structure that contains a set of ordered pairs. These ordered pairs are also referred to as edges or arcs, and are used to connect nodes where data can be stored and retrieved.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "Differentiate linear from non linear data structure.",
+    "answer": "Linear data structure is a structure wherein data elements are adjacent to each other. Examples of linear data structure include arrays, linked lists, stacks and queues. On the other hand, non-linear data structure is a structure wherein each data element can connect to more than two adjacent data elements. Examples of non linear data structure include trees and graphs.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What is an AVL tree?",
+    "answer": "An AVL tree is a type of binary search tree that is always in a state of partially balanced. The balance is measured as a difference between the heights of the subtrees from the root. This self-balancing tree was known to be the first data structure to be designed as such.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What are doubly linked lists?",
+    "answer": "Doubly linked lists are a special type of linked list wherein traversal across the data elements can be done in both directions. This is made possible by having two links in every node, one that links to the next node and other one that links to the previous node.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What is Huffman's algorithm?",
+    "answer": "Huffman's algorithm is associated in creating extended binary trees that has minimum weighted path lengths from the given weights. It makes use of a table that contains frequency of occurrence for each data element.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "What is Fibonacci search?",
+    "answer": "Fibonacci search is a search algorithm that applies to a sorted array. It makes use of a divide-and-conquer approach that can greatly reduce the time needed in order to reach the target element.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "Briefly explain recursive algorithm.",
+    "answer": "Recursive algorithm targets a problem by dividing it into smaller, manageable sub-problems. The output of one recursion after processing one sub-problem becomes the input to the next recursive process.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+  {
+    "question": "How do you search for a target key in a linked list?",
+    "answer": "To find the target key in a linked list, you have to apply sequential search. Each node is traversed and compared with the target key, and if it is different, then it follows the link to the next node. This traversal continues until either the target key is found or if the last node is reached.",
+    "origin": "http://career.guru99.com/top-50-data-structure-interview-questions/",
+    "source": "top-50-data-structure-interview-questions.txt"
+  },
+{
+    "question": "What is a Link?",
+    "answer": "A link refers to the connectivity between two devices. It includes the type of cables and protocols used in order for one device to be able to communicate with the other.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What are the layers of the OSI reference model?",
+    "answer": "There are 7 OSI layers: Physical Layer, Data Link Layer, Network Layer, Transport Layer, Session Layer, Presentation Layer and Application Layer.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is backbone network?",
+    "answer": "A backbone network is a centralized infrastructure that is designed to distribute different routes and data to various networks. It also handles management of bandwidth and various channels.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is a LAN?",
+    "answer": "LAN is short for Local Area Network. It refers to the connection between computers and other network devices that are located within a small physical location.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is a node?",
+    "answer": "A node refers to a point or joint where a connection takes place. It can be computer or device that is part of a network. Two or more nodes are needed in order to form a network connection.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What are routers?",
+    "answer": "Routers can connect two or more network segments. These are intelligent network devices that store information in its routing table such as paths, hops and bottlenecks. With this info, they are able to determine the best path for data transfer. Routers operate at the OSI Network Layer.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is point to point link?",
+    "answer": "It refers to a direct connection between two computers on a network. A point to point connection does not need any other network devices other than connecting a cable to the NIC cards of both computers.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is anonymous FTP?",
+    "answer": "Anonymous FTP is a way of granting user access to files in public servers. Users that are allowed access to data in these servers do not need to identify themselves, but instead log in as an anonymous guest.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is subnet mask?",
+    "answer": "A subnet mask is combined with an IP address in order to identify two parts: the extended network address and the host address. Like an IP address, a subnet mask is made up of 32 bits.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is the maximum length allowed for a UTP cable?",
+    "answer": "A single segment of UTP cable has an allowable length of 90 to 100 meters. This limitation can be overcome by using repeaters and switches.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is data encapsulation?",
+    "answer": "Data encapsulation is the process of breaking down information into smaller manageable chunks before it is transmitted across the network. It is also in this process that the source and destination addresses are attached into the headers, along with parity checks.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "Describe Network Topology",
+    "answer": "Network Topology refers to the layout of a computer network. It shows how devices and cables are physically laid out, as well as how they connect to one another.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is VPN?",
+    "answer": "VPN means Virtual Private Network, a technology that allows a secure tunnel to be created across a network such as the Internet. For example, VPNs allow you to establish a secure dial-up connection to a remote server.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "Briefly describe NAT.",
+    "answer": "NAT is Network Address Translation. This is a protocol that provides a way for multiple computers on a common network to share single connection to the Internet.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is the job of the Network Layer under the OSI reference model?",
+    "answer": "The Network layer is responsible for data routing, packet switching and control of network congestion. Routers operate under this layer.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "How does a network topology affect your decision in setting up a network?",
+    "answer": "Network topology dictates what media you must use to interconnect devices. It also serves as basis on what materials, connector and terminations that is applicable for the setup.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is RIP?",
+    "answer": "RIP, short for Routing Information Protocol is used by routers to send data from one network to another. It efficiently manages routing data by broadcasting its routing table to all other routers within the network. It determines the network distance in units of hops.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What are different ways of securing a computer network?",
+    "answer": "There are several ways to do this. Install reliable and updated anti-virus program on all computers. Make sure firewalls are setup and configured properly. User authentication will also help a lot. All of these combined would make a highly secured network.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is NIC?",
+    "answer": "NIC is short for Network Interface Card. This is a peripheral card that is attached to a PC in order to connect to a network. Every NIC has its own MAC address that identifies the PC on the network.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is WAN?",
+    "answer": "WAN stands for Wide Area Network. It is an interconnection of computers and devices that are geographically dispersed. It connects networks that are located in different regions and countries.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is the importance of the OSI Physical Layer?",
+    "answer": "The physical layer does the conversion from data bits to electrical signal, and vice versa. This is where network devices and cable types are considered and setup.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "How many layers are there under TCP/IP?",
+    "answer": "There are four layers: the Network Layer, Internet Layer, Transport Layer and Application Layer.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What are proxy servers and how do they protect computer networks?",
+    "answer": "Proxy servers primarily prevent external users who identifying the IP addresses of an internal network. Without knowledge of the correct IP address, even the physical location of the network cannot be identified. Proxy servers can make a network virtually invisible to external users.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is the function of the OSI Session Layer?",
+    "answer": "This layer provides the protocols and means for two devices on the network to communicate with each other by holding a session.  This includes setting up the session, managing information exchange during the session, and tear-down process upon termination of the session.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is the importance of implementing a Fault Tolerance System? Are there limitations?",
+    "answer": "A fault tolerance system ensures continuous data availability. This is done by eliminating a single point of failure. However, this type of system would not be able to protect data in some cases, such as in accidental deletions.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What does 10Base-T mean?",
+    "answer": "The 10 refers to the data transfer rate, in this case is 10Mbps. The word Base refers to base band, as oppose to broad band. T means twisted pair, which is the cable used for that network.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is a private IP address?",
+    "answer": "Private IP addresses are assigned for use on intranets. These addresses are used for internal networks and are not routable on external public networks. These ensures that no conflicts are present among internal networks while at the same time the same range of private IP addresses are reusable for multiple intranets since they do not \"see\" each other.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is NOS?",
+    "answer": "NOS, or Network Operating System, is specialized software whose main task is to provide network connectivity to a computer in order for it to be able to communicate with other computers and connected devices.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is DoS?",
+    "answer": "DoS, or Denial-of-Service attack, is an attempt to prevent users from being able to access the internet or any other network services. Such attacks may come in different forms and are done by a group of perpetuators. One common method of doing this is to overload the system server so it cannot anymore process legitimate traffic and will be forced to reset.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is OSI and what role does it play in computer networks?",
+    "answer": "OSI (Open Systems Interconnect) serves as a reference model for data communication. It is made up of 7 layers, with each layer defining a particular aspect on how network devices connect and communicate with one another. One layer may deal with the physical media used, while another layer dictates how data is actually transmitted across the network.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is the purpose of cables being shielded and having twisted pairs?",
+    "answer": "The main purpose of this is to prevent crosstalk. Crosstalks are electromagnetic interferences or noise that can affect data being transmitted across cables.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is the advantage of address sharing?",
+    "answer": "By using address translation instead of routing, address sharing provides an inherent security benefit. That's because host PCs on the Internet can only see the public IP address of the external interface on the computer that provides address translation and not the private IP addresses on the internal network.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What are MAC addresses?",
+    "answer": "MAC, or Media Access Control, uniquely identifies a device on the network. It is also known as physical address or Ethernet address. A MAC address is made up of 6-byte parts.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is the equivalent layer or layers of the TCP/IP Application layer in terms of OSI reference model?",
+    "answer": "The TCP/IP Application layer actually has three counterparts on the OSI model: the Session layer, Presentation Layer and Application Layer.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "How can you identify the IP class of a given IP address?",
+    "answer": "By looking at the first octet of any given IP address, you can identify whether it's Class A, B or C. If the first octet begins with a 0 bit, that address is Class A. If it begins with bits 10 then that address is a Class B address. If it begins with 110, then it's a Class C network.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is the main purpose of OSPF?",
+    "answer": "OSPF, or Open Shortest Path First, is a link-state routing protocol that uses routing tables to determine the best possible path for data exchange.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What are firewalls?",
+    "answer": "Firewalls serve to protect an internal network from external attacks. These external threats can be hackers who want to steal data or computer viruses that can wipe out data in an instant. It also prevents other users from external networks from gaining access to the private network.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "Describe star topology",
+    "answer": "Star topology consists of a central hub that connects to nodes. This is one of the easiest to setup and maintain.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What are gateways?",
+    "answer": "Gateways provide connectivity between two or more network segments. It is usually a computer that runs the gateway software and provides translation services. This translation is a key in allowing different systems to communicate on the network.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is the disadvantage of a star topology?",
+    "answer": "One major disadvantage of star topology is that once the central hub or switch get damaged, the entire network becomes unusable.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is SLIP?",
+    "answer": "SLIP, or Serial Line Interface Protocol, is actually an old protocol developed during the early UNIX days. This is one of the protocols that are used for remote access.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "Give some examples of private network addresses.",
+    "answer": "10.0.0.0 with a subnet mask of 255.0.0.0\n172.16.0.0 with subnet mask of 255.240.0.0\n192.168.0.0 with subnet mask of 255.255.0.0",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is tracert?",
+    "answer": "Tracert is a Windows utility program that can used to trace the route taken by data from the router to the destination network. It also shows the number of hops taken during the entire transmission route.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What are the functions of a network administrator?",
+    "answer": "A network administrator has many responsibilities that can be summarize into 3 key functions: installation of a network, configuration of network settings, and maintenance/troubleshooting of networks.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "Describe at one disadvantage of a peer to peer network.",
+    "answer": "When you are accessing the resources that are shared by one of the workstations on the network, that workstation takes a performance hit.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is Hybrid Network?",
+    "answer": "A hybrid network is a network setup that makes use of both client-server and peer-to-peer architecture.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is DHCP?",
+    "answer": "DHCP is short for Dynamic Host Configuration Protocol. Its main task is to automatically assign an IP address to devices across the network. It first checks for the next available address not yet taken by any device, then assigns this to a network device.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is the main job of the ARP?",
+    "answer": "The main task of ARP or Address Resolution Protocol is to map a known IP address to a MAC layer address.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is TCP/IP?",
+    "answer": "TCP/IP is short for Transmission Control Protocol / Internet Protocol. This is a set of protocol layers that is designed to make data exchange possible on different types of computer networks, also known as heterogeneous network.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "How can you manage a network using a router?",
+    "answer": "Routers have built in console that lets you configure different settings, like security and data logging. You can assign restrictions to computers, such as what resources it is allowed access, or what particular time of the day they can browse the internet. You can even put restrictions on what websites are not viewable across the entire network.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What protocol can be applied when you want to transfer files between different platforms, such between UNIX systems and Windows servers?",
+    "answer": "Use FTP (File Transfer Protocol) for file transfers between such different servers. This is possible because FTP is platform independent.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is the use of a default gateway?",
+    "answer": "Default gateways provide means for the local networks to connect to the external network. The default gateway for connecting to the external network is usually the address of the external router port.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "One way of securing a network is through the use of passwords. What can be considered as good passwords?",
+    "answer": "Good passwords are made up of not just letters, but by combining letters and numbers. A password that combines uppercase and lowercase letters is favorable than one that uses all upper case or all lower case letters. Passwords must be not words that can easily be guessed by hackers, such as dates, names, favorites, etc. Longer passwords are also better than short ones.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is the proper termination rate for UTP cables?",
+    "answer": "The proper termination for unshielded twisted pair network cable is 100 ohms.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is netstat?",
+    "answer": "Netstat is a command line utility program. It provides useful information about the current TCP/IP settings of a connection.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is the number of network IDs in a Class C network?",
+    "answer": "For a Class C network, the number of usable Network ID bits is 21. The number of possible network IDs is 2 raised to 21 or 2,097,152. The number of host IDs per network ID is 2 raised to 8 minus 2, or 254.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What happens when you use cables longer than the prescribed length?",
+    "answer": "Cables that are too long would result in signal loss. This means that data transmission and reception would be affected, because the signal degrades over length.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What common software problems can lead to network defects?",
+    "answer": "Software related problems can be any or a combination of the following:\n client server problems\n application conflicts\n error in configuration\n protocol mismatch\n security issues\n user policy and rights issues",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is ICMP?",
+    "answer": "ICMP is Internet Control Message Protocol. It provides messaging and communication for protocols within the TCP/IP stack. This is also the protocol that manages error messages that are used by network tools such as PING.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is Ping?",
+    "answer": "Ping is a utility program that allows you to check connectivity between network devices on the network. You can ping a device by using its IP address or device name, such as a computer name.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is peer to peer?",
+    "answer": "Peer to peer are networks that does not reply on a server. All PCs on this network act as individual workstations.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is DNS?",
+    "answer": "DNS is Domain Name System. The main function of this network service is to provide host names to TCP/IP address resolution.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What advantages does fiber optics have over other media?",
+    "answer": "One major advantage of fiber optics is that is it less susceptible to electrical interference. It also supports higher bandwidth, meaning more data can be transmitted and received. Signal degrading is also very minimal over long distances.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is the difference between a hub and a switch?",
+    "answer": "A hub acts as a multiport repeater. However, as more and more devices connect to it, it would not be able to efficiently manage the volume of traffic that passes through it. A switch provides a better alternative that can improve the performance especially when high traffic volume is expected across all ports.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What are the different network protocols that are supported by Windows RRAS services?",
+    "answer": "There are three main network protocols supported: NetBEUI, TCP/IP, and IPX.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What are the maximum networks and hosts in a class A, B and C network?",
+    "answer": "For Class A, there are 126 possible networks and 16,777,214 hosts\nFor Class B, there are 16,384 possible networks and 65,534 hosts\nFor Class C, there are 2,097,152 possible networks and 254 hosts",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is the standard color sequence of a straight-through cable?",
+    "answer": "orange/white, orange, green/white, blue, blue/white, green, brown/white, brown.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What protocols fall under the Application layer of the TCP/IP stack?",
+    "answer": "The following are the protocols under TCP/IP Application layer: FTP, TFTP, Telnet and SMTP.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "You need to connect two computers for file sharing. Is it possible to do this without using a hub or router?",
+    "answer": "Yes, you can connect two computers together using only one cable. A crossover type cable can be use in this scenario. In this setup, the data transmit pin of one cable is connected to the data receive pin of the other cable, and vice versa.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is ipconfig?",
+    "answer": "Ipconfig is a utility program that is commonly used to identify the addresses information of a computer on a network. It can show the physical address as well as the IP address.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is the difference between a straight-through and crossover cable?",
+    "answer": "A straight-through cable is used to connect computers to a switch, hub or router. A crossover cable is used to connect two similar devices together, such as a PC to PC or Hub to hub.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is client/server?",
+    "answer": "Client/server is a type of network wherein one or more computers act as servers. Servers provide a centralized repository of resources such as printers and files. Clients refers to workstation that access the server.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "Describe networking.",
+    "answer": "Networking refers to the inter connection between computers and peripherals for data communication. Networking can be done using wired cabling or through wireless link.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "When you move the NIC cards from one PC to another PC, does the MAC address gets transferred as well?",
+    "answer": "Yes, that's because MAC addresses are hard-wired into the NIC circuitry, not the PC. This also means that a PC can have a different MAC address when the NIC card was replace by another one.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "Explain clustering support",
+    "answer": "Clustering support refers to the ability of a network operating system to connect multiple servers in a fault-tolerant group. The main purpose of this is the in the event that one server fails, all processing will continue on with the next server in the cluster.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "In a network that contains two servers and twenty workstations, where is the best place to install an Anti-virus program?",
+    "answer": "An anti-virus program must be installed on all servers and workstations to ensure protection. That's because individual users can access any workstation and introduce a computer virus when plugging in their removable hard drives or flash drives.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "Describe Ethernet.",
+    "answer": "Ethernet is one of the popular networking technologies used these days. It was developed during the early 1970s and is based on specifications as stated in the IEEE. Ethernet is used in local area networks.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What are some drawbacks of implementing a ring topology?",
+    "answer": "In case one workstation on the network suffers a malfunction, it can bring down the entire network. Another drawback is that when there are adjustments and reconfigurations needed to be performed on a particular part of the network, the entire network has to be temporarily brought down as well.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is the difference between CSMA/CD and CSMA/CA?",
+    "answer": "CSMA/CD, or Collision Detect, retransmits data frames whenever a collision occurred. CSMA/CA, or Collision Avoidance, will first broadcast intent to send prior to data transmission.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is SMTP?",
+    "answer": "SMTP is short for Simple Mail Transfer Protocol. This protocol deals with all Internal mail, and provides the necessary mail delivery services on the TCP/IP protocol stack.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is multicast routing?",
+    "answer": "Multicast routing is a targeted form of broadcasting that sends message to a selected group of user, instead of sending it to all users on a subnet.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is the importance of Encryption on a network?",
+    "answer": "Encryption is the process of translating information into a code that is unreadable by the user. It is then translated back or decrypted back to its normal readable format using a secret key or password. Encryption help ensure that information that is intercepted halfway would remain unreadable because the user has to have the correct password or key for it.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "How are IP addresses arranged and displayed?",
+    "answer": "IP addresses are displayed as a series of four decimal numbers that are separated by period or dots. Another term for this arrangement is the dotted decimal format. An example is 192.168.101.2",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "Explain the importance of authentication.",
+    "answer": "Authentication is the process of verifying a user's credentials before he can log into the network. It is normally performed using a username and password. This provides a secure means of limiting the access from unwanted intruders on the network.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What do mean by tunnel mode?",
+    "answer": "This is a mode of data exchange wherein two communicating computers do not use IPSec themselves. Instead, the gateway that is connecting their LANs to the transit network creates a virtual tunnel that uses the IPSec protocol to secure all communication that passes through it.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What are the different technologies involved in establishing WAN links?",
+    "answer": "Analog connections \u2013 using conventional telephone lines; Digital connections \u2013 using digital-grade telephone lines; switched connections \u2013 using multiple sets of links between sender and receiver to move data.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is one advantage of mesh topology?",
+    "answer": "In the event that one link fails, there will always be another available. Mesh topology is actually one of the most fault-tolerant network topology.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "When troubleshooting computer network problems, what common hardware-related problems can occur?",
+    "answer": "A large percentage of a network is made up of hardware. Problems in these areas can range from malfunctioning hard drives, broken NICs and even hardware startups. Incorrectly hardware configuration is also one of those culprits to look into.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What can be done to fix signal attenuation problems?",
+    "answer": "A common way of dealing with such a problem is to use repeaters and hub, because it will help regenerate the signal and therefore prevent signal loss. Checking if cables are properly terminated is also a must.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "How does dynamic host configuration protocol aid in network administration?",
+    "answer": "Instead of having to visit each client computer to configure a static IP address, the network administrator can apply dynamic host configuration protocol to create a pool of IP addresses known as scopes that can be dynamically assigned to clients.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "Explain profile in terms of networking concept?",
+    "answer": "Profiles are the configuration settings made for each user. A profile may be created that puts a user in a group, for example.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is sneakernet?",
+    "answer": "Sneakernet is believed to be the earliest form of networking wherein data is physically transported using removable media, such as disk, tapes.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is the role of IEEE in computer networking?",
+    "answer": "IEEE, or the Institute of Electrical and Electronics Engineers, is an organization composed of engineers that issues and manages standards for electrical and electronic devices. This includes networking devices, network interfaces, cablings and connectors.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What protocols fall under the TCP/IP Internet Layer?",
+    "answer": "There are 4 protocols that are being managed by this layer. These are ICMP, IGMP, IP and ARP.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "When it comes to networking, what are rights?",
+    "answer": "Rights refer to the authorized permission to perform specific actions on the network. Each user on the network can be assigned individual rights, depending on what must be allowed for that user.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is one basic requirement for establishing VLANs?",
+    "answer": "A VLAN is required because at switch level there is only one broadcast domain, it means whenever new user is connected to switch this information is spread throughout the network. VLAN on switch helps to create separate broadcast domain at  switch level. It is used for security purpose.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is IPv6?",
+    "answer": "IPv6, or Internet Protocol version 6, was developed to replace IPv4. At present, IPv4 is being used to control internet traffic, but is expected to get saturated in the near future. IPv6 was designed to overcome this limitation.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is RSA algorithm?",
+    "answer": "RSA is short for Rivest-Shamir-Adleman algorithm. It is the most commonly used public key encryption algorithm in use today.\n\n99.What is mesh topology?\n\nMesh topology is a setup wherein each device is connected directly to every other device on the network. Consequently, it requires that each device have at least two network connections.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is the maximum segment length of a 100Base-FX network?",
+    "answer": "The maximum allowable length for a network segment using 100Base-FX is 412 meters. The maximum length for the entire network is 5 kilometers.",
+    "origin": "http://career.guru99.com/top-100-networking-interview-questions-answers/",
+    "source": "top-100-networking-interview-questions.txt"
+  },
+  {
+    "question": "What is OOPS?",
+    "answer": "OOPS is abbreviated as Object Oriented Programming system in which programs are\nconsidered as a collection of objects. Each object is nothing but an instance of a class.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "Write basic concepts of OOPS?",
+    "answer": "Following are the concepts of OOPS and are as follows:.\n\nAbstraction.\nEncapsulation.\nInheritance.\nPolymorphism.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is a class?",
+    "answer": "A class is simply a representation of a type of object. It is the blueprint/ plan/ template that\ndescribe the details of an object.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is an object?",
+    "answer": "Object is termed as an instance of a class, and it has its own state, behavior and identity.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is Encapsulation?",
+    "answer": "Encapsulation is an attribute of an object, and it contains all data which is hidden. That hidden\ndata can be restricted to the members of that class.\nLevels are Public, Protected, Private, Internal and Protected Internal.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is Polymorphism?",
+    "answer": "Polymorphism is nothing but assigning behavior or value in a subclass to something that was\nalready declared in the main class. Simply, polymorphism takes more than one form.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is Inheritance?",
+    "answer": "Inheritance is a concept where one class shares the structure and behavior defined in another\nclass. If inheritance applied on one class is called Single Inheritance, and if it depends on\nmultiple classes, then it is called multiple Inheritance.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What are manipulators?",
+    "answer": "Manipulators are the functions which can be used in conjunction with the insertion () operators\non an object. Examples are endl and setw.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "Define a constructor?",
+    "answer": "Constructor is a method used to initialize the state of an object, and it gets invoked at the time\nof object creation. Rules for constructor are:\nConstructor Name should be same as class name.\nConstructor must have no return type.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "Define Destructor?",
+    "answer": "Destructor is a method which is automatically called when the object is made of scope or\ndestroyed. Destructor name is also same as class name but with the tilde symbol before the\nname.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is Inline function?",
+    "answer": "Inline function is a technique used by the compilers and instructs to insert complete body of the\nfunction wherever that function is used in the program source code.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is a virtual function?",
+    "answer": "Virtual function is a member function of class and its functionality can be overridden in its derived\nclass. This function can be implemented by using a keyword called virtual, and it can be given\nduring function declaration.\nVirtual function can be achieved in C++, and it can be achieved in C Language by using function\npointers or pointers to function.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is friend function?",
+    "answer": "Friend function is a friend of a class that is allowed to access to Public, Private or Protected data\nin that same class. If the function is defined outside the class cannot access such information.\nFriend can be declared anywhere in the class declaration, and it cannot be affected by access\ncontrol keywords like private, public or protected.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is function overloading?",
+    "answer": "Function overloading is defined as a normal function, but it has the ability to perform different\ntasks. It allows creation of several methods with the same name which differ from each other by\ntype of input and output of the function.\nExample\nvoid add(int& a, int& b);\nvoid add(double& a, double& b);\nvoid add(struct bob& a, struct bob& b);",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is operator overloading?",
+    "answer": "Operator overloading is a function where different operators are applied and depends on the\narguments. Operator, -, * can be used to pass through the function, and it has their own\nprecedence to execute.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is an abstract class?",
+    "answer": "An abstract class is a class which cannot be instantiated. Creation of an object is not possible\nwith abstract class , but it can be inherited. An abstract class can contain only Abstract method.\nJava allows only abstract method in abstract class while for other language it allows non abstract method as well.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is a ternary operator?",
+    "answer": "Ternary operator is said to be an operator which takes three arguments. Arguments and results\nare of different data types, and it is depends on the function. Ternary operator is also called\nas conditional operator.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is the use of finalize method?",
+    "answer": "Finalize method helps to perform cleanup operations on the resources which are not currently\nused. Finalize method is protected, and it is accessible only through this class or by a derived\nclass.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What are different types of arguments?",
+    "answer": "A parameter is a variable used during the declaration of the function or subroutine and\narguments are passed to the function, and it should match with the parameter defined. There\nare two types of Arguments.\nCall by Value \u2013 Value passed will get modified only inside the function, and it returns\nthe same value whatever it is passed it into the function.\nCall by Reference \u2013 Value passed will get modified in both inside and outside the\nfunctions and it returns the same or different value.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is super keyword?",
+    "answer": "Super keyword is used to invoke overridden method which overrides one of its superclass\nmethods. This keyword allows to access overridden methods and also to access hidden\nmembers of the superclass.\nIt also forwards a call from a constructor to a constructor in the superclass.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is method overriding?",
+    "answer": "Method overriding is a feature that allows sub class to provide implementation of a method that\nis already defined in the main class. This will overrides the implementation in the superclass by\nproviding the same method name, same parameter and same return type.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is an interface?",
+    "answer": "An interface is a collection of abstract method. If the class implements an inheritance, and then\nthereby inherits all the abstract methods of an interface.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is exception handling?",
+    "answer": "Exception is an event that occurs during the execution of a program. Exceptions can be of any\ntype \u2013 Run time exception, Error exceptions. Those exceptions are handled properly through\nexception handling mechanism like try, catch and throw keywords.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What are tokens?",
+    "answer": "Token is recognized by a compiler and it cannot be broken down into component elements.\nKeywords, identifiers, constants, string literals and operators are examples of tokens.\nEven punctuation characters are also considered as tokens \u2013 Brackets, Commas, Braces and\nParentheses.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "Difference between overloading and overriding?",
+    "answer": "Overloading is static binding whereas Overriding is dynamic binding. Overloading is nothing but\nthe same method with different arguments, and it may or may not return the same value in the\nsame class itself.\nOverriding is the same method names with same arguments and return types associates with\nthe class and its child class.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "Difference between class and an object?",
+    "answer": "An object is an instance of a class. Objects hold any information, but classes don't have any\ninformation. Definition of properties and functions can be done at class and can be used by the\nobject.\nClass can have sub-classes, and an object doesn\u2019t have sub-objects.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is an abstraction?",
+    "answer": "Abstraction is a good feature of OOPS, and it shows only the necessary details to the client of\nan object. Means, it shows only necessary details for an object, not the inner details of an\nobject. Example \u2013 When you want to switch On television, it not necessary to show all the\nfunctions of TV. Whatever is required to switch on TV will be showed by using abstract class.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What are access modifiers?",
+    "answer": "Access modifiers determine the scope of the method or variables that can be accessed from\nother various objects or classes. There are 5 types of access modifiers, and they are as\nfollows:\nPrivate.\nProtected.\nPublic.\nFriend.\nProtected Friend.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is sealed modifiers?",
+    "answer": "Sealed modifiers are the access modifiers where it cannot be inherited by the methods. Sealed\nmodifiers can also be applied to properties, events and methods. This modifier cannot be\napplied to static members.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "How can we call the base method without creating an instance?",
+    "answer": "Yes, it is possible to call the base method without creating an instance. And that method should\nbe Static method.\nDoing inheritance from that class.-Use Base Keyword from derived class.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is the difference between new and override?",
+    "answer": "The new modifier instructs the compiler to use the new implementation instead of the base class\nfunction. Whereas, Override modifier helps to override the base class function.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What are the various types of constructors?",
+    "answer": "There are three various types of constructors, and they are as follows:\n- Default Constructor - With no parameters.\n- Parametric Constructor \u2013 With Parameters. Create a new instance of a class and also passing\narguments simultaneously.\n- Copy Constructor - Which creates a new object as a copy of an existing object.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is early and late binding?",
+    "answer": "Early binding refers to assignment of values to variables during design time whereas late\nbinding refers to assignment of values to variables during run time.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is 'this' pointer?",
+    "answer": "THIS pointer refers to the current object of a class. THIS keyword is used as a pointer which\ndifferentiates between the current object with the global object. Basically, it refers to the current\nobject.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is the difference between structure and a class?",
+    "answer": "Structure default access type is public , but class access type is private. A structure is used for\ngrouping data whereas class can be used for grouping data and methods. Structures are\nexclusively used for data and it doesn\u2019t require strict validation, but classes are used to\nencapsulates and inherit data which requires strict validation.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is the default access modifier in a class?",
+    "answer": "The default access modifier of a class is Private by default.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is pure virtual function?",
+    "answer": "A pure virtual function is a function which can be overridden in the derived class but cannot be\ndefined. A virtual function can be declared as Pure by using the operator = 0.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What are all the operators that cannot be overloaded?",
+    "answer": "Following are the operators that cannot be overloaded:\n1. Scope Resolution (::)\n2. Member Selection (.)\n3. Member selection through a pointer to function (.*)",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is dynamic or run time polymorphism?",
+    "answer": "Dynamic or Run time polymorphism is also known as method overriding in which call to an\noverridden function is resolved during run time, not at the compile time. It means having two or\nmore methods with the same name, same signature but with different implementation.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "Do we require parameter for constructors?",
+    "answer": "No, we do not require parameter for constructors.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is a copy constructor?",
+    "answer": "This is a special constructor for creating a new object as a copy of an existing object. There will\nbe always only on copy constructor that can be either defined by the user or the system.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What does the keyword virtual represented in the method definition?",
+    "answer": "It means, we can override the method.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What are base class, sub class and super class?",
+    "answer": "Base class is the most generalized class, and it is said to be a root class.\nSub class is a class that inherits from one or more base classes.\nSuper class is the parent class from which another class inherits.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is static and dynamic binding?",
+    "answer": "Binding is nothing but the association of a name with the class. Static binding is a binding in\nwhich name can be associated with the class during compilation time, and it is also called as\nearly Binding.\nDynamic binding is a binding in which name can be associated with the class during execution\ntime, and it is also called as Late Binding.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "How many instances can be created for an abstract class?",
+    "answer": "Zero instances will be created for an abstract class.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "Which keyword can be used for overloading?",
+    "answer": "Operator keyword is used for overloading.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What is the default access specifier in a class definition?",
+    "answer": "Private access specifier is used in a class definition.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "Which OOPS concept is used as reuse mechanism?",
+    "answer": "Inheritance is the OOPS concept that can be used as reuse mechanism.",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "Which OOPS concept exposes only necessary information to the calling functions?",
+    "answer": "Data Hiding / Abstraction",
+    "origin": "http://career.guru99.com/top-50-oops-interview-questions/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
+    "question": "What are your daily news checks?",
+    "answer": "It seems like we can't go more than a few days anymore without hearing about a major breach, which on the surface would make it seem that more people and places are being hacked than ever before (which to be honest is true). However, it also shows that detection and reporting of attacks is improving per requirements of both government entities and insurance companies. As a result, the public and security professionals are both better informed as to what they can do to help protect themselves and watch out for falsified charges on their accounts. Keeping up to date on these matters is vital for anyone interested in Information Security.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "What do you have on your home network?",
+    "answer": "Nothing shows you how to break and fix things more than a test environment, and for most people that means their home network. Whether its a Windows laptop with a wireless generic router and a phone all the way up to 14 Linux Workstations, an Active Directory Domain Controller, a dedicated Firewall appliance and a net-attached toaster \u2013 as long as you are learning and fiddling with it, that's what matters.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "What personal achievement are you most proud of?",
+    "answer": "For me at least, this one is easy- getting my CISSP. I studied for months, did every possible thing I could to improve my recall and asked for anybody and everybody to help ask questions and modify them in ways to make me try to think around corners. Everybody has at least one thing that they are proud of, and while this and the next question may be the same answer, all that matters is showing that you are willing to move forward and willing to be self-motivated.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "What project that you have built are you most proud of?",
+    "answer": "For some people, this would be the first computer they ever built, or the first time they modified a game console, or the first program they wrote, the list can go on and on. In my case, that would be a project for work that I was working on for years. It started out as an Excel spreadsheet that the Engineering department were using to keep track of their AutoCAD drawings, and ended up evolving through a couple hundred static HTML pages, an Access Database and frontend, and finally to a full on web application running in MySQL and PHP. This simple little thing ended up becoming an entire website with dedicated Engineering, Sales and Quality web apps used by the company globally, which just goes to show you you never know where something might lead.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "How would traceroute help you find out where a breakdown in communication is?",
+    "answer": "Tracert or traceroute, depending on the operating system, allows you to see exactly what routers you touch as you move along the chain of connections to your final destination. However, if you end up with a problem where you can't connect or can't ping your final destination, a tracert can help in that regard as you can tell exactly where the chain of connections stop. With this information, you can contact the correct people \u2013 whether it be your own firewall, your ISP, your destination's ISP or somewhere in the middle.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "Why would you want to use SSH from a Windows pc?",
+    "answer": "SSH (TCP port 22) is a secure connection used on many different systems and dedicated appliances. Routers, Switches, SFTP servers and unsecure programs being tunnelled through this port all can be used to help harden a connection against eavesdropping. Despite the fact that most times when you hear about somebody 'SSHing' into a box it involves Linux, the SSH protocol itself is actually implemented on a wide variety of systems \u2013 though not by default on most Windows systems. Programs like PuTTY, Filezilla and others have Windows ports available, which allow Windows users the same ease-of-use connectivity to these devices as do Linux users.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "What's the difference between Symmetric and Asymmetric encryption?",
+    "answer": "To boil down an extremely complicated topic into a few short words, Symmetric encryption uses the same key to encrypt and decrypt, while Asymmetric uses different keys for encryption and decryption. Symmetric is usually much faster, but is difficult to implement most times due to the fact that you would have to transfer the key over an unencrypted channel. Therefore many times an Asymmetric connection will be established first, then send creates the Symmetric connection. This leads us into the next topic\u2026",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "What is SSL and why is it not enough when it comes to encryption?",
+    "answer": "SSL is identity verification, not hard data encryption. It is designed to be able to prove that the person you are talking to on the other end is who they say they are. SSL and its big brother TLS are both used almost everyone online, but the problem is because of this it is a huge target and is mainly attacked via its implementation (The Heartbleed bug for example) and its known methodology. As a result, SSL can be stripped in certain circumstances, so additional protections for data-in-transit and data-at-rest are very good ideas.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "How would you find out what a POST code means?",
+    "answer": "POST is one of the best tools available when a system will not boot. Normally through the use of either display LEDs in more modern systems, or traditionally through audio tones, these specific codes can tell you what the system doesn't like about its current setup. Because of how rare these events can be, unless you are on a tech bench day in and day out, reference materials such as the Motherboard manual and your search engine of choice can be tremendous assets. Just remember to make sure that everything is seated correctly, you have at least the minimum required components to boot, and most importantly that you have all of your connections on the correct pins.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "What is the difference between a Black Hat and a White Hat?",
+    "answer": "This particular question can lead into a major philosophical debate about freedom of information, and if something is implemented in a deliberately broken way it isn't actually breaking into it, etc etc. The one I've heard the most is the classic Jedi example \u2013 same tools, different ideologies. Personally, with the people I know that have worked on both sides of the line it comes down to this \u2013 the difference between a Black Hat and a White Hat is who is signing the check.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "You need to reset a password-protected BIOS configuration. What do you do?",
+    "answer": "While BIOS itself has been superseded by UEFI, most systems still follow the same configuration for how they keep the settings in storage. Since BIOS itself is a pre-boot system, it has its own storage mechanism for its settings and preferences. In the classic scenario, simply popping out the CMOS (complementary metal-oxide-semiconductor) battery will be enough to have the memory storing these settings lose its power supply, and as a result it will lose its settings. Other times, you need to use a jumper or a physical switch on the motherboard. Still other times you need to actually remove the memory itself from the device and reprogram it in order to wipe it out. The simplest way by far however is this: if the BIOS has come from the factory with a default password enabled, try 'password'.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "What is XSS?",
+    "answer": "Cross-site scripting, the nightmare of Javascript. Because Javascript can run pages locally on the client system as opposed to running everything on the server side, this can cause headaches for a programmer if variables can be changed directly on the client's webpage. There are a number of ways to protect against this, the easiest of which is input validation.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "How would you login to Active Directory from a Linux or Mac box?",
+    "answer": "While it may sound odd, it is possible to access Active Directory from a non-Windows system. Active Directory uses an implementation of the SMB protocol, which can be accessed from a Linux or Mac system by using the Samba program. Depending on the version, this can allow for share access, printing, and even Active Directory membership.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "What are salted hashes?",
+    "answer": "Salt at its most fundamental level is random data. When a properly protected password system receives a new password, it will create a hashed value for that password, create a new random salt value, and then store that combined value in its database. This helps defend against dictionary attacks and known hash attacks. For example, if a user uses the same password on two different systems, if they used the same hashing algorithm, they could end up with the same hash value. However, if even one of the systems uses salt with its hashes, the values will be different.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "What do you think of social networking sites such as Facebook and LinkedIn?",
+    "answer": "This is a doozy, and there are an enormous number of opinions for this question. Many think they are the worst thing that ever happened to the world, while others praise their existence. In the realm of security, they can be the source of extreme data leaks if handled in their default configurations. It is possible to lock down permissions on social networking sites, but in some cases this isn't enough due to the fact that the backend is not sufficiently secured. This also doesn't help if somebody else's profile that you have on your list gets compromised. Keeping important data away from these kinds of sites is a top priority, and only connecting with those you trust is also extremely helpful.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "What are the three ways to authenticate a person?",
+    "answer": "Something they know (password), something they have (token), and something they are (biometrics). Two-factor authentication often times uses a password and token setup, although in some cases this can be a PIN and thumbprint.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "How would you judge if a remote server is running IIS or Apache?",
+    "answer": "Error messages oftentimes giveaway what the server is running, and many times if the website administrator has not set up custom error pages for every site, it can give it away as simply as just entering a known bad address. Other times, just using telnet can be enough to see how it responds. Never underestimate the amount of information that can be gained by not getting the right answer but by asking the right questions.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "What is data protection in transit vs data protection at rest?",
+    "answer": "When data is protected while it is just sitting there in its database or on its hard drive- it can be considered at rest. On the other hand, while it is going from server to client it is in-transit. Many servers do one or the other- protected SQL databases, VPN connections, etc, however there are not many that do both primarily because of the extra drain on resources. It is still a good practice to do both however, even if it does take a bit longer.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "You see a user logging in as root to perform basic functions. Is this a problem?",
+    "answer": "A Linux admin account (root) has many powers that are not permitted for standard users. That being said, it is not always necessary to log all the way off and log back in as root in order to do these tasks. For example, if you have ever used the 'run as admin' command in Windows, then you will know the basic concept behind 'sudo' or 'superuser (root) do' for whatever it is you want it to do. It's a very simple and elegant method for reducing the amount of time you need to be logged in as a privileged user. The more time a user spends with enhanced permissions, the more likely it is that something is going to go wrong \u2013 whether accidentally or intentionally.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "How do you protect your home Wireless Access Point?",
+    "answer": "This is another opinion question \u2013 there are a lot of different ways to protect a Wireless Access Point: using WPA2, not broadcasting the SSID, and using MAC address filtering are the most popular among them. There are many other options, but in a typical home environment, those three are the biggest.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "What is an easy way to configure a network to allow only a single computer to login on a particular jack?",
+    "answer": "Sticky ports are one of the network admin's best friends and worst headaches. They allow you to set up your network so that each port on a switch only permits one (or a number that you specify) computer to connect on that port by locking it to a particular MAC address. If any other computer plugs into that port, the port shuts down and you receive a call that they can't connect anymore. If you were the one that originally ran all the network connections then this isn't a big issue, and likewise if it is a predictable pattern then it also isn't an issue. However if you're working in a hand-me-down network where chaos is the norm then you might end up spending a while toning out exactly what they are connecting to.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "You are remoted in to a headless system in a remote area. You have no physical access to the hardware and you need to perform an OS installation. What do you do?",
+    "answer": "There are a couple of different ways to do this, but the most like scenario you will run into is this: What you would want to do is setup a network-based installer capable of network-booting via PXE (if you've ever seen this during your system boot and wondering what it was for, tada). Environments that have very large numbers of systems more often than not have the capability of pushing out images via the network. This reduces the amount of hands-on time that is required on each system, and keeps the installs more consistent.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "On a Windows network, why is it easier to break into a local account than an AD account?",
+    "answer": "Windows local accounts have a great deal of baggage tied to them, running back a long long way to keep compatibility for user accounts. If you are a user of passwords longer than 13 characters, you may have seen the message referring to this fact. However, Active Directory accounts have a great deal of security tied onto them, not the least of which is that the system actually doing the authenticating is not the one you are usually sitting at when you are a regular user. Breaking into a Windows system if you have physical access is actually not that difficult at all, as there are quite a few dedicated utilities for just such a purpose, however that is beyond the scope of what we'll be getting into here.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "What is the CIA triangle?",
+    "answer": "Confidentiality, Integrity, Availability. As close to a 'code' for Information Security as it is possible to get, it is the boiled down essence of InfoSec. Confidentiality- keeping data secure. Integrity- keeping data intact. Availability- keeping data accessible.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "What is the difference between an HIDS and a NIDS?",
+    "answer": "Both acronyms are Intrusion Detection Systems, however the first is a Host Intrusion Detection System whereas the second is a Network Intrusion Detection System. An HIDS runs as a background utility in the same as an anti-virus program for instance, while a Network Intrusion Detection System sniffs packets as they go across the network looking for things that aren't quite ordinary. Both systems have two basic variants: signature based and anomaly based. Signature based is very much like an anti-virus system, looking for known values of known 'bad things', while anomaly looks more for network traffic that doesn't fit the usual pattern of the network. This requires a bit more time to get a good baseline, but in the long term can be better on the uptake for custom attacks.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "You find out that there is an active problem on your network. You can fix it, but it is out of your jurisdiction. What do you do?",
+    "answer": "This question is a biggie. The true answer is that you contact the person in charge of that department via email \u2013 make sure to keep that for your records \u2013 along with CCing your manager as well. There may be a very important reason why a system is configured in a particular way, and locking it out could mean big trouble. Bringing up your concerns to the responsible party is the best way to let them know that you saw a potential problem, are letting them know about it, and covering yourself at the same time by having a timestamp on it.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "You are an employee for a tech department in a non-management position. A high-level executive demands that you break protocol and allow him to use his home laptop at work. What do you do?",
+    "answer": "You would be amazed how often this happens, even more so in the current BYOD environment. Still, the easiest way out of this one is to contact your manager again and have them give a yay or nay. This puts the authority and decision where it needs to be, and gives you assistance if the department needs to push back. Stress can be a real killer in position where you have to say 'no' to people that don't like hearing it, so passing the buck can be a friend.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "What is the difference between a vulnerability and an exploit?",
+    "answer": "A lot of people would say that they are the same thing, and in a sense they would be right. However, one is a potential problem while the other is an active problem. Think of it like this: You have a shed with a broken lock where it won't latch properly. In some areas such as major cities, that would be a major problem that needs to be resolved immediately, while in others like rural areas its more of a nuisance that can be fixed when you get around to it. In both scenarios it would be a vulnerability, while the major cities shed would be an example of an exploit \u2013 there are people in the area, actively exploiting a known problem.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "How would you compromise an \"Office Workstation\" at a hotel?",
+    "answer": "Considering how infected these typically are, I wouldn't touch one with a 10ft pole. That being said, a USB keylogger is easy to fit into the back of these systems without much notice while an autorun program would be able to run quickly and quietly leaving behind software to do the dirty work. In essence, it's open season on exploits in this type of environment.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "What is worse in Firewall Detection, a false negative or a false positive? And why?",
+    "answer": "Far and away is a false negative. A false positive is annoying, but easily dealt with \u2013 calling a legitimate piece of traffic bad. A false negative however is a piece of malicious traffic being let through without incident \u2013 definitely bad.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "What's better, a red team or a blue team?",
+    "answer": "Another opinion question, more along the lines of where your interests lie. In penetration testing scenarios, a red team is trying to break in while a blue team is defending. Red Teams typically are considered the 'cooler' of the two, while the Blue Team is usually the more difficult. The usual rules apply like in any defense game: the Blue Team has to be good every time, while the Red Team only has to be good once. That's not entirely accurate given the complexities at work in most scenarios, but it's close enough to explain the idea.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "What's the difference between a White Box test and a Black Box test?",
+    "answer": "Information given by the person commissioning the test. A White Box test is one where the pen testing team is given as much information as possible regarding the environment, while a Black Box test is... well... a Black Box. They don't know what's inside.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "What is the difference between Information Protection and Information Assurance?",
+    "answer": "Information Protection is just what it sounds like- protecting information through the use of Encryption, Security software and other methods designed to keep it safe. Information Assurance on the other hand deals more with keeping the data reliable \u2013 RAID configurations, backups, non-repudiation techniques, etc.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "How would you lock down a mobile device?",
+    "answer": "Another opinion question, and as usual a lot of different potential answers. The baseline for these though would be three key elements: An anti-malware application, a remote wipe utility, and full-disk encryption. Almost all modern mobile devices regardless of manufacturer have anti-malware and remote wipe available for them, and very few systems now do not come with full-disk encryption available as an option directly within the OS.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "What is the difference between closed-source and open-source? Which is better?",
+    "answer": "Yet another opinion question. Closed-source is a typical commercially developed program. You receive an executable file which runs and does its job without the ability to look far under the hood. Open-source however provides the source code to be able to inspect everything it does, as well as be able to make changes yourself and recompile the code. Both have arguments for and against them, most have to do with audits and accountability. Closed-source advocates claim that open-source causes issues because everybody can see exactly how it works and exploit weaknesses in the program. Open-source counter saying that because closed-source programs don't provide ways to fully check them out, its difficult to find and troubleshoot issues in the programs beyond a certain level.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "What is your opinion on hacktivist groups such as Anonymous?",
+    "answer": "You might have guessed that this level is very much about forming opinions and drawing conclusions, and you'd be right \u2013 this one is an especially loaded question. Like any major group without a central leader, they seem to be mostly chaotic, at times seeming like a force for good, while at others causing havoc for innocents. Choose your words very carefully here, as it could be a dealbreaker.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "What is the Three-way handshake? How can it be used to create a DOS attack?",
+    "answer": "The three-way handshake is a cornerstone of the TCP suite: SYN, SYN/ACK, ACK. SYN is the outgoing connection request from client to server. ACK is the acknowledgement of the server back to the client, saying that yes I hear you, let's open a connection. SYN/ACK is the final connection, and allows the two to speak. The problem is that this can be used as a very basic type of Denial of Service Attack. The client opens up the SYN connection, the server responds with the SYN/ACK, but then the client sends another SYN. The server treats this as a new connection request and keeps the previous connection open. As this is repeated over and over many times very quickly, the server quickly becomes saturated with a huge number of connection requests, eventually overloading its ability to connect to legitimate users.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "Why would you bring in an outside contractor to perform a penetration test?",
+    "answer": "Much like getting a fresh set of eyes on a problem, sometimes you have people that don't want to see or don't want to admit to an issue. Bringing in extra help as an audit can really help eliminate problems that your team isn't able to resolve on their own. Granted they may cost a small fortune, but they are extremely good at what they do.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "If you were going to break into a database-based website, how would you do it?",
+    "answer": "And here's other side of the coin: learning to break into your own systems so that you can pen test them yourself. While the exact methods are different for each type of database server and programming language, the easiest attack vector to test for first is an SQL injection technique. For example, if the input fields are not sterilized, just entering a specific set of symbols into a form field may be enough to get back data. Alternatively, depending again on how the site is written, using a specially crafted URL may be enough to get back data as well. Footprinting the server ahead of time can help in this task if it isn't one you built yourself.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "Why are internal threats oftentimes more successful than external threats?",
+    "answer": "When you see something day in and day out, even if it shocks you at first, you tend to get used to it. This means that if you see somebody that pokes around day after day, month after month, you might get used to the fact that he's just curious. You let your guard down, and don't react as quickly to possible threats. On the other hand, say for example you have an annoyed employee that is soon to be fired and wants to show his soon to be former employer that he can bring them down, so he sells his still active credentials and card-key to a local group that specializes in white-collar crime. Still other infiltrators dress up as delivery people and wander around aimlessly in office buildings, getting information off of post-it notes and papers lying around. External threats do not have access to near this level of information about the company, and more often than not do not get in as far as somebody that spent 20 bucks on a knock-off UPS uniform.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "What is residual risk?",
+    "answer": "I'm going to let Ed Norton answer this one: \"A new car built by my company leaves somewhere traveling at 60 mph. The rear differential locks up. The car crashes and burns with everyone trapped inside. Now, should we initiate a recall? Take the number of vehicles in the field, A, multiply by the probable rate of failure, B, multiply by the average out-of-court settlement, C. A times B times C equals X. If X is less than the cost of a recall, we don't do one.\" Residual Risk is what is left over after you perform everything that is cost-effective to increase security, but to go further than that is a waste of resources. Residual risk is what the company is willing to live with as a gamble in the hopes that it won't happen.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "Why is deleted data not truly gone when you delete it?",
+    "answer": "When you press delete on a file, it doesn't actually go anywhere. A bit on the file is flipped telling the operating system that that file is no longer needed and it can be overwritten as is required. Until that happens, the file can still be restored no matter if it's in a Recycling Bin or not. There are ways around this, such as using File Shredders and disk wipers, but both of these take quite a bit of time to finish their jobs to a reasonable degree.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "What is the Chain of Custody?",
+    "answer": "When keeping track of data or equipment for use in legal proceedings, it needs to remain in a pristine state. Therefore, documenting exactly who has had access to what for how long is vital when dealing with this situation. Any compromise in the data can lead to legal issues for the parties involved and can lead to a mistrial or contempt depending on the scenario.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "How would you permanently remove the threat of data falling into the wrong hands?",
+    "answer": "If data is on physical media such as a diskette, cd or even paper, there are shredders, pulverizers and destroyers that can turn plastic and paper into confetti. For hard disks however, that becomes a bit more tricky. Most locations will turn to a two-fold method for ensuring a disk's destruction by first using a specially made disc wiping program, taking apart the hard drive, removing the platters, scratching them up beyond recognition and then degaussing them with a high-powered magnet. This ensures that the data cannot be recovered through conventional means.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "What is Exfiltration?",
+    "answer": "Infiltration is the method by which you enter or smuggle elements into a location. Exfiltration is just the opposite: getting sensitive information or objects out of a location without being discovered. In an environment with high security, this can be extremely difficult but not impossible. Again we turn to our friends in the fake delivery uniforms wandering around the building, and see that yes there are ways to get in and out without a lot of issues.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "I run an SMB. I have 4 people in my entire company and a web-based store. I don't have the time, patience or manpower to have a computer guy. Why should I care about exploits and computer jibberish?",
+    "answer": "This is a classic catch-22 situation: a company doesn't have enough money to secure their networks, but by the same token they can't afford a payout if they get compromised. At the same time, they really can't afford to have a dedicated computer technician, let alone a security consultant. If you are able to explain (in words that don't make it sound like you're just fearmongering), an SMB will acknowledge what they need to do to keep their store secure and keep receiving payments since following the money will tend to help move things along.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "I'm the CEO of a Fortune 500 company. I make more in an afternoon than you make in a year. I don't care about this stupid security stuff, it just costs time and money and slows everything down. Why should I care about this junk?",
+    "answer": "This one is significantly harder \u2013 they are used to having people lie, cheat and steal from them on a regular basis, and when somebody comes in saying that the company is going to lose all this money unless you pay for this, they're probably going to say no. Therefore, having done your homework and having the support of the local IT team instead of alienating them is vital. Performing site assessments, creating executive summaries and line-by-line breakdowns of what goes where can help them to better understand what is going to be done and keep the project going.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "I'm the legal council for a large corporation. We have requirements to document assets and code changes. We have a very limited budget for this task. How would you resolve this?",
+    "answer": "This is actually one of the easier ones \u2013 you have an informed party, asking for assistance to something that is important. They have money for the project (albeit not much), but it is better than nothing. At the very bottom of the spectrum, this could be accomplished in nothing more than Excel with a lot of time and data entry, moving all the way up the chain to automated Network Scanners documenting everything they find to a database and programs that check-in and out programs with versioning and delta files. It all depends on how big the project is, and how big the company is.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  },
+  {
+    "question": "I'm the new guy \u2013 I used to be a coder at my old job and my manager wants me to create some custom programs. I need domain administrator rights for this task. My boss said its alright, and you either give me what I need or you're fired and he'll find somebody that will. How do you respond?",
+    "answer": "Unfortunately you will run into the hardball guy at least once in your career. In this case though, like others we have run into, it's time to move it up the chain to the manager. They will be able to give the yay or nay depending on exactly what the project is and be able to take the brunt of an attack if it comes.",
+    "origin": "http://resources.infosecinstitute.com/top-50-information-security-interview-questions/",
+    "source": "top-50-security-interview-questions.txt"
+  }, 
+  
+
+
+  {
+    "question": "What is file system?",
+    "answer": "A file system or filesystem is used to control how data is stored and retrieved. Without a file system, information placed in a storage medium would be one large body of data with no way to tell where one piece of information stops and the next begins. By separating the data into pieces and giving each piece a name, the information is easily isolated and identified.",
+    "origin": "https://en.wikipedia.org/wiki/File_system",
+    "tags": ["definition"]
+  }, {
+    "question": "What is binary search?",
+    "answer": "In computer science, binary search, also known as half-interval search or logarithmic search, is a search algorithm that finds the position of a target value within a sorted array. Binary search compares the target value to the middle element of the array; if they are unequal, the half in which the target cannot lie is eliminated and the search continues on the remaining half until it is successful or the remaining half is empty.",
+    "origin": "https://en.wikipedia.org/wiki/Binary_search_algorithm",
+    "tags": ["definition"]
+  }, {
+    "question": "What is a binary tree?",
+    "answer": "In computer science, a binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child. A recursive definition using just set theory notions is that a (non-empty) binary tree is a triple (L, S, R), where L and R are binary trees or the empty set and S is a singleton set.",
+    "origin": "https://en.wikipedia.org/wiki/Binary_tree",
+    "tags": ["definition"]
+  }, {
+    "question": "What is a Binary Search Tree?",
+    "answer": "binary search trees (BST), sometimes called ordered or sorted binary trees, are a particular type of containers: data structures that store items such as numbers, names etc.) in memory. They allow fast lookup, addition and removal of items, and can be used to implement either dynamic sets of items, or lookup tables that allow finding an item by its key (e.g., finding the phone number of a person by name).",
+    "origin": "https://en.wikipedia.org/wiki/Binary_search_tree",
+    "tags": ["definition"]
+  }, {
+    "question": "What is an merged sort?",
+    "answer": "Merge sort (also commonly spelled mergesort) is an efficient, general-purpose, comparison-based sorting algorithm. Most implementations produce a stable sort, which means that the implementation preserves the input order of equal elements in the sorted output. Mergesort is a divide and conquer algorithm that was invented by John von Neumann in 1945.",
+    "origin": "https://en.wikipedia.org/wiki/Merge_sort",
+    "tags": ["definition"]
+  }, {
+    "question": "What is a container?",
+    "answer": "A container is a class, a data structure, or an abstract data type (ADT) whose instances are collections of other objects. In other words, they store objects in an organized way that follows specific access rules. The size of the container depends on the number of objects (elements) it contains. Underlying (inherited) implementations of various container types may vary in size and complexity, and provide flexibility in choosing the right implementation for any given scenario.",
+    "origin": "https://en.wikipedia.org/wiki/Container_(abstract_data_type)",
+    "tags": ["definition"]
+  }, {
+    "question": "What is an associative array?",
+    "answer": "An associative array, map, symbol table, or dictionary is an abstract data type composed of a collection of (key, value) pairs, such that each possible key appears at most once in the collection.",
+    "origin": "https://en.wikipedia.org/wiki/Associative_array",
+    "tags": ["definition"]
+  }, {
+    "question": "What is a multimap?",
+    "answer": "A multimap (sometimes also multihash) is a generalization of a map or associative array abstract data type in which more than one value may be associated with and returned for a given key. Both map and multimap are particular cases of containers (for example, see C++ Standard Template Library containers). Often the multimap is implemented as a map with lists or sets as the map values.",
+    "origin": "https://en.wikipedia.org/wiki/Multimap",
+    "tags": ["definition"]
+  }, {
+    "question": "What is a set?",
+    "answer": "A set is an abstract data type that can store certain values, without any particular order, and no repeated values. It is a computer implementation of the mathematical concept of a finite set. Unlike most other collection types, rather than retrieving a specific element from a set, one typically tests a value for membership in a set.",
+    "origin": "https://en.wikipedia.org/wiki/Set_(abstract_data_type)",
+    "tags": ["definition"]
+  }, {
+    "question": "What is a double-ended queue?",
+    "answer": "A double-ended queue is an abstract data type that generalizes a queue, for which elements can be added to or removed from either the front (head) or back (tail).",
+    "origin": "https://en.wikipedia.org/wiki/Double-ended_queue",
+    "tags": ["definition"]
+  }, {
+    "question": "What is a priority queue?",
+    "answer": "A priority queue is an abstract data type which is like a regular queue or stack data structure, but where additionally each element has a priority associated with it. In a priority queue, an element with high priority is served before an element with low priority. If two elements have the same priority, they are served according to their order in the queue.",
+    "origin": "https://en.wikipedia.org/wiki/Priority_queue",
+    "tags": ["definition"]
+  }, {
+    "question": "What is a tree?",
+    "answer": "A tree is a widely used abstract data type (ADT)—or data structure implementing this ADT—that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node, represented as a set of linked nodes.",
+    "origin": "https://en.wikipedia.org/wiki/tree_(data_structure)",
+    "tags": ["definition"]
+  }, {
+    "question": "What is a red-black tree?",
+    "answer": "A red–black tree is a kind of self-balancing binary search tree. Each node of the binary tree has an extra bit, and that bit is often interpreted as the color (red or black) of the node. These color bits are used to ensure the tree remains approximately balanced during insertions and deletions.",
+    "origin": "https://en.wikipedia.org/wiki/Red–black_tree",
+    "tags": ["definition"]
+  }, {
+    "question": "What is a heap?",
+    "answer": "A heap is a specialized tree-based data structure that satisfies the heap property: If A is a parent node of B, then the key (the value) of node A is ordered with respect to the key of node B with the same ordering applying across the heap. A heap can be classified further as either a max heap or a min heap. In a max heap, the keys of parent nodes are always greater than or equal to those of the children and the highest key is in the root node. In a min heap, the keys of parent nodes are less than or equal to those of the children and the lowest key is in the root node.",
+    "origin": "https://en.wikipedia.org/wiki/Heap_(data_structure)",
+    "tags": ["definition"]
+  }, {
+    "question": "What is big O?",
+    "answer": "The time complexity of an algorithm quantifies the amount of time taken by an algorithm to run as a function of the length of the string representing the input.The time complexity of an algorithm is commonly expressed using big O notation, which excludes coefficients and lower order terms. When expressed this way, the time complexity is said to be described asymptotically, i.e., as the input size goes to infinity.",
+    "origin": "https://en.wikipedia.org/wiki/Time_complexity",
+    "tags": ["definition"]
+  }, {
+    "question": "What is a Abstract Data Type?",
+    "answer": "An abstract data type (ADT) is a mathematical model for data types where a data type is defined by its behavior (semantics) from the point of view of a user of the data, specifically in terms of possible values, possible operations on data of this type, and the behavior of these operations. This contrasts with data structures, which are concrete representations of data, and are the point of view of an implementer, not a user.",
+    "origin": "https://en.wikipedia.org/wiki/Abstract_data_type",
+    "tags": ["definition"]
+  }, {
+    "question": "What is a recursion?",
+    "answer": "Recursion in computer science is a method where the solution to a problem depends on solutions to smaller instances of the same problem (as opposed to iteration).",
+    "origin": "https://en.wikipedia.org/wiki/Recursion_(computer_science)",
+    "tags": ["definition"]
+  }, {
+    "question": "What is a quicksort?",
+    "answer": "Quicksort is a divide and conquer algorithm. Quicksort first divides a large array into two smaller sub-arrays: the low elements and the high elements. Quicksort can then recursively sort the sub-arrays.",
+    "origin": "https://en.wikipedia.org/wiki/Quicksort#Algorithm",
+    "tags": ["definition"]
+  }
+]
