@@ -7,6 +7,7 @@
 - eval_from_json: Evaluate a training set from a JSON file against Q Bot IO search endpoint
 - compare_eval.py: Compare between two evaluations
 - extract_from_json: Extract questions or answers from JSON corpus
+- eval_suite.sh/.bat: Run evaluation suite, outputs results into etc/
 
 ## Development
 
