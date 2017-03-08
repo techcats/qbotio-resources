@@ -1200,6 +1200,12 @@
     "source": "top-50-oops-interview-questions.txt"
   },
   {
+    "question": "Can a static function access non-static member variables of class?",
+    "answer": "The answer here is no. What is the reason? Well, because non-static member variables of a class always belong to an object – meaning that every object has it’s own personal copy of non-static member variables (also known as instance variables). And, static functions have no object to work with since they belong to the class as a whole. Remember that you can call a static function without an object – and for that exact reason a static function can not call instance variables.",
+    "origin": "http://www.programmerinterview.com/index.php/c-cplusplus/can-static-function-access-non-static-members-of-class/",
+    "source": "top-50-oops-interview-questions.txt"
+  },
+  {
     "question": "What are base class, sub class and super class?",
     "answer": "Base class is the most generalized class, and it is said to be a root class.\nSub class is a class that inherits from one or more base classes.\nSuper class is the parent class from which another class inherits.",
     "origin": "http://career.guru99.com/top-50-oops-interview-questions/",

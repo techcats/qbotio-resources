@@ -7,6 +7,7 @@ parser.add_argument('-i', '-I', '--input', metavar='<File>', type=str, help='a J
 parser.add_argument('-o', '-O', '--output', metavar='<File>', type=str, help='File for reporting evaluation results', required=True)
 parser.add_argument('-v', '--verbose', action='store_true', help='Output accuracy for each question result')
 parser.add_argument('--passthrough', action='store_true', help='Omit NLTK preprocessing')
+parser.add_argument('--ranks', type=int, help='Number of ranks', required=True)
 args = parser.parse_args()
 PATH = os.path.dirname(os.path.abspath(__file__))
 
@@ -51,10 +52,12 @@ for i, data in enumerate(TRAINING_DATA):
       elif item['value'] == data['answer']:
         rank = j + 1
     rank_count += 1
+    if (j + 1 == args.ranks):
+      break
   total_rankings += rank_count
   if rank == 0: 
     misses += 1
-    rank_error = 10
+    rank_error = args.ranks
   else:
     accuracy = (rank_count - (rank - 1)) / rank_count
     rank_error = rank - 1
